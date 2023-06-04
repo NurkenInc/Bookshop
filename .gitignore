@@ -1,5 +1,5 @@
 # folders
-build
+/build
 node_modules
 idea
 
