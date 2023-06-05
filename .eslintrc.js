@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -43,6 +44,6 @@ module.exports = {
     "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
     "no-underscore-dangle": "off",
     "@typescript-eslint/naming-convention": "off",
-    "i18next/no-literal-string": [2, { markupOnly: true }],
+    "i18next/no-literal-string": [2, { markupOnly: true, onlyAttribute: [""] }],
   },
 };

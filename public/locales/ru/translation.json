@@ -1,5 +1,8 @@
 {
   "Test example": "Тестовый пример",
   "Translation": "Перевод",
-  "Language": "Английский"
+  "Language": "Английский",
+  "Toggle": "Переключить",
+  "Main": "Главная",
+  "About us": "О Сайте"
 }
