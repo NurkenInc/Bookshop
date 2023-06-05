@@ -7,18 +7,22 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'airbnb-typescript',
+    'plugin:i18next/recommended',
   ],
   overrides: [
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json',
+    tsconfigRootDir: __dirname,
+    project: ['./tsconfig.json'],
   },
   plugins: [
     'react',
     '@typescript-eslint',
+    'i18next',
   ],
+  ignorePatterns: ['.eslintrc.js'],
   rules: {
     'quotes': [2, 'single'],
     'semi': [2, 'always'],
@@ -39,5 +43,6 @@ module.exports = {
     "import/no-extraneous-dependencies": [2, { "devDependencies": true }],
     "no-underscore-dangle": "off",
     "@typescript-eslint/naming-convention": "off",
+    "i18next/no-literal-string": [2, { markupOnly: true }],
   },
 };
