@@ -2,6 +2,7 @@
 /build
 node_modules
 idea
+.vscode
 
 # files
 # ///////TO DELETE\\\\\\\
