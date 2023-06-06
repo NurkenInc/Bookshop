@@ -29,7 +29,7 @@ module.exports = {
     'semi': [2, 'always'],
     'no-multi-spaces': [2],
     "indent": [2, 2],
-    "max-len": [2, { "code": 105 }],
+    "max-len": [2, { "code": 105, "ignoreComments": true }],
     "react/jsx-indent": [2, 2],
     "react/jsx-indent-props": [2, 2],
     "react/react-in-jsx-scope": "off",
