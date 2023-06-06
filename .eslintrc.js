@@ -24,6 +24,7 @@ module.exports = {
     'react',
     '@typescript-eslint',
     'i18next',
+    'react-hooks'
   ],
   ignorePatterns: ['.eslintrc.js'],
   rules: {
@@ -47,12 +48,17 @@ module.exports = {
     "no-underscore-dangle": "off",
     "@typescript-eslint/naming-convention": "off",
     "i18next/no-literal-string": [2, { markupOnly: true, onlyAttribute: [""] }],
+    "jsx-a11y/no-static-element-interactions": [0],
+    "jsx-a11y/click-events-have-key-events": [0],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "error",
   },
   overrides: [
     {
-      files: ['**/src/**/*.test.{ts,tsx}'],
+      files: ['**/src/**/*.{test,stories}.{ts,tsx}'],
       rules: {
         "i18next/no-literal-string": "off",
+        "max-len": "off",
       }
     },
   ],
