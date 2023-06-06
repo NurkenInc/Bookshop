@@ -17,7 +17,7 @@ module.exports = {
     sourceType: 'module',
     tsconfigRootDir: __dirname,
     project: [
-      './tsconfig.json', 
+      './tsconfig.eslint.json', 
     ],
   },
   plugins: [
@@ -48,4 +48,12 @@ module.exports = {
     "@typescript-eslint/naming-convention": "off",
     "i18next/no-literal-string": [2, { markupOnly: true, onlyAttribute: [""] }],
   },
+  overrides: [
+    {
+      files: ['**/src/**/*.test.{ts,tsx}'],
+      rules: {
+        "i18next/no-literal-string": "off",
+      }
+    },
+  ],
 };
