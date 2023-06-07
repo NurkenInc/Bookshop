@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import { Button } from 'shared/ui/Button/Button';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import cls from './PageError.module.scss';
 
 interface PageErrorProps {
@@ -18,7 +18,7 @@ export const PageError = ({ className }: PageErrorProps) => {
   return (
     <div className={classNames(cls.PageError, {}, [className])}>
       {t('Something went wrong')}
-      <Button onClick={reloadPage}>
+      <Button onClick={reloadPage} theme={ButtonTheme.BACKGROUND}>
         {t('Update page')}
       </Button>
     </div>
