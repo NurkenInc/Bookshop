@@ -9,5 +9,6 @@
   "Something went wrong": "Something went wrong",
   "Update page": "Update page",
   "Abbreviation": "Eng",
-  "Login": "Login"
+  "Login": "Login",
+  "Credentials are invalid": "Credentials are invalid. Please try again"
 }

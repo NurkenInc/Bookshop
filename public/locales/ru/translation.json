@@ -9,5 +9,6 @@
   "Something went wrong": "Что-то пошло не так...",
   "Update page": "Обновить страницу",
   "Abbreviation": "Ru",
-  "Login": "Login"
+  "Login": "Login",
+  "Credentials are invalid": "Вы ввели неправильный пароль или логин. Попробуйте еще раз!"
 }
