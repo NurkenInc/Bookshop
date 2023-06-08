@@ -1,7 +1,7 @@
 {
   "Test example": "Text example",
   "Translation": "Translation",
-  "Language": "Russian",
+  "Language": "English",
   "Toggle": "Toggle",
   "Main": "Main",
   "About us": "About us",
@@ -12,5 +12,7 @@
   "Abbreviation": "Eng",
   "Login": "Login",
   "Credentials are invalid": "Credentials are invalid. Please try again",
-  "Logout": "Logout"
+  "Logout": "Logout",
+  "Pick currency": "Pick a currency",
+  "Choose country": "Choose country"
 }

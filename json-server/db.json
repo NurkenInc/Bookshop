@@ -25,14 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { 
+  "profile": {
     "first": "Will",
-    "lastname": "Smith",
-    "age": "22",
-    "currency": "USD",
+    "lastname": "Smithlolol",
+    "age": 23,
+    "currency": "EURO",
     "country": "USA",
     "city": "New York",
     "username": "admin",
-    "avatar": "https://i.insider.com/62bc34ff2224c30018141c7b?width=1000&format=jpeg&auto=webp"
+    "avatar": "https://avatars.githubusercontent.com/u/8957173?v=4"
   }
 }

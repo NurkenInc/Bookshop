@@ -2,5 +2,15 @@
   "Edit": "Edit",
   "Profile": "Profile",
   "Your Name": "Your Name",
-  "Your Lastname": "Your Lastname"
+  "Your Lastname": "Your Lastname",
+  "Your Age": "Your Age",
+  "Your Country": "Your Country",
+  "Your City": "Your City",
+  "Your Username": "Your Username",
+  "Your Currency": "Your Currency",
+  "Your Avatar": "Your Avatar link",
+  "Loading profile error": "Error occured while loading profile data",
+  "Try again": "Try again. Or come later",
+  "Cancel": "Cancel",
+  "Save": "Save"
 }
