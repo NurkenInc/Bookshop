@@ -1,0 +1,22 @@
+export enum Currency {
+  USD = 'USD',
+  EURO = 'EURO',
+  KZT = 'KZT',
+  RUB = 'RUB',
+}
+
+export enum Country {
+  USA = 'USA',
+  POLAND = 'POLAND',
+  GERMANY = 'GERMANY',
+  ITALY = 'ITALY',
+  FRANCE = 'FRANCE',
+  TURKEY = 'TURKEY',
+  CHINA = 'CHINA',
+  FINLAND = 'FINLAND',
+  KAZAKHSTAN = 'KAZAKHSTAN',
+  UKRAINE = 'UKRAINE',
+  UZBEKISTAN = 'UZBEKISTAN',
+  KYRGYZSTAN = 'KYRGYZSTAN',
+  RUSSIA = 'RUSSIA',
+}

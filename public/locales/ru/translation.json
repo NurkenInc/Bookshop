@@ -5,10 +5,12 @@
   "Toggle": "Переключить",
   "Main": "Главная",
   "About us": "О Сайте",
+  "Profile": "Профиль",
   "Page not found": "Страница не найдена",
   "Something went wrong": "Что-то пошло не так...",
   "Update page": "Обновить страницу",
   "Abbreviation": "Ru",
-  "Login": "Login",
-  "Credentials are invalid": "Вы ввели неправильный пароль или логин. Попробуйте еще раз!"
+  "Login": "Войти",
+  "Credentials are invalid": "Вы ввели неправильный пароль или логин. Попробуйте еще раз!",
+  "Logout": "Выйти"
 }
