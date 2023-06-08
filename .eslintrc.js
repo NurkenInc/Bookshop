@@ -53,6 +53,7 @@ module.exports = {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
     "no-param-reassign": "off",
+    "no-undef": "off",
   },
   overrides: [
     {
@@ -63,4 +64,8 @@ module.exports = {
       }
     },
   ],
+  globals: {
+    __IS_DEV__: true,
+    __API__: true,
+  },
 };

@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import {
-  InputHTMLAttributes, memo, useEffect, useRef, useState,
+  InputHTMLAttributes, MutableRefObject, memo, useEffect, useRef, useState,
 } from 'react';
 import cls from './Input.module.scss';
 
@@ -10,6 +10,7 @@ interface InputProps extends HTMLInputProps {
   className?: string,
   value?: string,
   type?: string,
+  placeholder?: string,
   autofocus?: boolean,
   onChange?: (value: string) => void,
 }
@@ -21,6 +22,7 @@ export const Input = memo((props: InputProps) => {
     onChange,
     type = 'text',
     autoFocus,
+    placeholder,
     ...otherProps
   } = props;
 
@@ -28,11 +30,11 @@ export const Input = memo((props: InputProps) => {
     onChange?.(e.target.value);
   };
 
-  const ref = useRef<HTMLInputElement>();
+  const ref = useRef() as MutableRefObject<HTMLInputElement>;
 
   useEffect(() => {
     if (autoFocus) {
-      ref?.current.focus();
+      ref?.current?.focus();
     }
   }, [autoFocus]);
 
@@ -43,6 +45,7 @@ export const Input = memo((props: InputProps) => {
         className={classNames(cls.input, {}, [className])}
         type={type}
         value={value}
+        placeholder={placeholder}
         onChange={onChangeHandler}
         {...otherProps}
       />
