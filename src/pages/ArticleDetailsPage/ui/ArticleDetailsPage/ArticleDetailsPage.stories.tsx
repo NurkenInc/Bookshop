@@ -21,7 +21,7 @@ const article: Article = {
   id: '1',
   title: 'javascript news',
   subtitle: 'What\'s new in js for 2022 year?',
-  img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Flevelup.gitconnected.com%2Fcreate-a-search-bar-using-vanilla-js-af56c80c949a&psig=AOvVaw2kZb0WTy6WLFnHTQ7LnxT_&ust=1686380484168000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCOjoiIHPtf8CFQAAAAAdAAAAABAE',
+  img: 'https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg',
   views: 1022,
   createdAt: '09.06.2023',
   type: [ArticleType.IT],
