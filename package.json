@@ -7,7 +7,7 @@
     "test": "jest",
     "start": "webpack serve --env port=3000",
     "start:dev:server": "node ./json-server/index.js",
-    "start:dev": "concurrently \"npm start\" \"npm start:dev:server\"",
+    "start:dev": "concurrently \"npm start\" \"npm run start:dev:server\"",
     "build:prod": "webpack --env mode=production",
     "build:dev": "webpack --env mode=development",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
