@@ -12,5 +12,12 @@
   "Loading profile error": "Error occured while loading profile data",
   "Try again": "Try again. Or come later",
   "Cancel": "Cancel",
-  "Save": "Save"
+  "Save": "Save",
+  "Incorrect user data": "Incorrect user data",
+  "Incorrect country": "Incorrect country",
+  "Incorrect city": "Incorrect city",
+  "Incorrect age": "Incorrect age",
+  "Incorrect avatar link": "Incorrect avatar link",
+  "Incorrect currency": "Incorrect currency",
+  "Data is empty": "Some of data is empty"
 }

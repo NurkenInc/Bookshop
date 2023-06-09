@@ -3,7 +3,7 @@ import { StateSchema } from 'app/providers/StoreProvider';
 import { loginActions, loginReducer } from './loginSlice';
 import { LoginSchema } from '../types/loginSchema';
 
-describe('loginSlice.test', () => {
+describe('loginSlice', () => {
   test('test set username', () => {
     const state: DeepPartial<LoginSchema> = { username: '123' };
     expect(loginReducer(
