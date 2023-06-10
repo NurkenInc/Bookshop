@@ -1,4 +1,4 @@
-import { memo, useEffect } from 'react';
+import { memo, useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
@@ -9,6 +9,8 @@ import { Text } from 'shared/ui/Text/Text';
 import { CommentList, Comment } from 'entities/Comment';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { useInitialEffect } from 'shared/lib/hooks/useInitialEffect/useInitialEffect';
+import { AddCommentForm } from 'features/AddCommentForm';
+import { addCommentForArticle } from 'pages/ArticleDetailsPage/model/services/addCommentForArticle/addCommentForArticle';
 import {
   articleDetailsCommentsReducer, getArticleComments,
 } from '../../model/slice/articleDetailsCommentsSlice';
@@ -35,6 +37,10 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
 
   const dispatch = useAppDispatch();
 
+  const onSendComment = useCallback((text: string) => {
+    dispatch(addCommentForArticle(text));
+  }, [dispatch]);
+
   useInitialEffect(() => {
     dispatch(fetchCommentByArticleId(id));
   });
@@ -48,13 +54,14 @@ const ArticleDetailsPage = (props: ArticleDetailsPageProps) => {
   }
 
   return (
-    <DynamicModuleLoader reducers={reducers} removeAfterUnmount>
+    <DynamicModuleLoader reducers={reducers}>
       <div className={classNames(cls.ArticleDetailsPage, {}, [className])}>
         <ArticleDetails id={id} />
         <Text
           className={cls.commentTitle}
           title={t('comments')}
         />
+        <AddCommentForm onSendComment={onSendComment} />
         <CommentList
           isLoading={isLoading}
           comments={comments}

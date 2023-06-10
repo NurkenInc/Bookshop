@@ -14,5 +14,17 @@ export default meta;
 type Story = StoryObj<typeof CommentCard>;
 
 export const Normal: Story = {
-  args: {},
+  args: {
+    comment: {
+      id: '2',
+      text: 'Let him cook!',
+      user: { id: '2', username: 'user-vs4eew4evd287tj' },
+    },
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    isLoading: true,
+  },
 };
