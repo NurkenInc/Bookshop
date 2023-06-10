@@ -9,6 +9,8 @@ import 'app/styles/index.scss';
 import 'shared/config/i18n/i18n';
 import { StoreProvider } from 'app/providers/StoreProvider';
 
+// students community like borderless project 
+
 render(
   <BrowserRouter>
     <StoreProvider>
