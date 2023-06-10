@@ -14,6 +14,6 @@ export const Icon = memo((props: IconProps) => {
   } = props;
 
   return (
-    <Svg className={classNames(cls.Icon, {}, [className])} />
+    <Svg className={classNames(cls.Icon, {}, [className])} height={20} width={20} />
   );
 });

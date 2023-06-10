@@ -1,3 +1,5 @@
+import { User } from 'entities/User';
+
 export enum ArticleBlogType {
   CODE = 'CODE',
   IMAGE = 'IMAGE',
@@ -39,8 +41,14 @@ export interface Article {
   title: string,
   subtitle: string,
   img: string,
+  user: User,
   views: number,
   createdAt: string,
   type: ArticleType[],
   blocks: ArticleBlock[],
+}
+
+export enum ArticleView {
+  BAR = 'BAR',
+  DETAILED = 'DETAILED',
 }

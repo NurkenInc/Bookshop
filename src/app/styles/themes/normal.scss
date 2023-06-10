@@ -1,5 +1,5 @@
 :root {
-  --bg-color: #28d7b1;
+  --bg-color: #3b9984;
   --inverted-bg-color: #05668d;
   --primary-color: #000;
   --secondary-color: #252424;
@@ -9,5 +9,10 @@
   // skeleton
   --skeleton-color: #fff;
   --skeleton-shadow: rgba(0 0 0 / 20%);
+  
+  // code
   --code-bg: #28d7b1;
+
+  // card
+  --card-bg: #28d7b1;
 }

@@ -24,6 +24,10 @@ const article: Article = {
   img: 'https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg',
   views: 1022,
   createdAt: '09.06.2023',
+  user: {
+    id: '1',
+    username: 'idk',
+  },
   type: [ArticleType.IT],
   blocks: [
     {

@@ -18,8 +18,14 @@
       "subtitle": "What's new in js for 2022 year?",
       "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
       "views": 1022,
+      "user": {
+        "username": "lol",
+        "id": "1"
+      },
       "createdAt": "09.06.2023",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -84,22 +90,16 @@
   ],
   "comments": [
     {
-      "id": "1",
-      "text": "some comment 1",
       "articleId": "1",
-      "userId": "1"
+      "userId": "2",
+      "text": "lol",
+      "id": 1
     },
     {
-      "id": "2",
-      "text": "some comment 2",
       "articleId": "1",
-      "userId": "1"
-    },
-    {
-      "id": "3",
-      "text": "some comment 3",
-      "articleId": "1",
-      "userId": "1"
+      "userId": "1",
+      "text": "lol",
+      "id": 2
     }
   ],
   "users": [
@@ -108,14 +108,14 @@
       "username": "admin",
       "password": "123",
       "role": "ADMIN",
-      "avatar": "https://avatars.githubusercontent.com/u/8957173?v=4"
+      "avatar": "https://resizing.flixster.com/_GrCbFNcz21ZlOhK0rGPoz2Zis8=/206x305/v2/https://flxt.tmsimg.com/assets/p13937884_p_v8_ab.jpg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
       "role": "USER",
-      "avatar": "https://resizing.flixster.com/_GrCbFNcz21ZlOhK0rGPoz2Zis8=/206x305/v2/https://flxt.tmsimg.com/assets/p13937884_p_v8_ab.jpg"
+      "avatar": "https://avatars.githubusercontent.com/u/8957173?v=4"
     }
   ],
   "profile": [
