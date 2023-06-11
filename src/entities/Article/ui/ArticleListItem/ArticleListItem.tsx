@@ -23,12 +23,6 @@ interface ArticleListItemProps {
   isLoading?: boolean,
 }
 
-const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.BAR ? 9 : 3)
-  .fill(0)
-  .map((item, index) => (
-    <ArticleListItemSkeleton view={view} key={index} className={cls.card} />
-  ));
-
 export const ArticleListItem = memo((props: ArticleListItemProps) => {
   const {
     className,
@@ -50,14 +44,6 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
   const onOpenArticle = useCallback(() => {
     navigate(RoutePath.article_details + (article?.id || ''));
   }, [navigate, article?.id]);
-
-  if (isLoading) {
-    return (
-      <div className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}>
-        {getSkeletons(view)}
-      </div>
-    );
-  }
 
   if (view === ArticleView.DETAILED) {
     const textBlock = article?.blocks.find((block) => block.type === ArticleBlogType.TEXT) as ArticleTextBlock;

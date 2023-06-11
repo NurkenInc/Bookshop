@@ -3,6 +3,8 @@
   "Loading": "Loading...",
   "Read More": "Read More",
   "comments": "Comments",
+  "Something went wrong": "Something went wrong",
+  "Please refresh page": "Please refresh page",
   "Back to articles list": "Back to articles list",
   "Error": "Error occured while loading article. Something went wrong..."
 }
