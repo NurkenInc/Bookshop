@@ -4,7 +4,7 @@ import { ArticleListItemSkeleton } from './ArticleListItemSkeleton';
 import { ArticleView } from '../../model/types/article';
 
 const meta: Meta<typeof ArticleListItemSkeleton> = {
-  title: 'entities/ArticleListItemSkeleton',
+  title: 'entities/Article/ArticleListItemSkeleton',
   component: ArticleListItemSkeleton,
   tags: ['autodocs'],
   argTypes: {

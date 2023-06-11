@@ -4,7 +4,7 @@ import { ArticleList } from './ArticleList';
 import { Article, ArticleView } from '../../model/types/article';
 
 const meta: Meta<typeof ArticleList> = {
-  title: 'entities/ArticleList',
+  title: 'entities/Article/ArticleList',
   component: ArticleList,
   tags: ['autodocs'],
   argTypes: {

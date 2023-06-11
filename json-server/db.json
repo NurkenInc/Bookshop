@@ -1,25 +1,47 @@
 {
-  "posts": [
+  "notifications": [
     {
       "id": "1",
-      "title": "json-server",
+      "title": "Уведомление 1",
+      "description": "Произошло какое-то событие",
       "userId": "1"
     },
     {
       "id": "2",
-      "title": "json-server",
+      "title": "Уведомление 2",
+      "description": "Произошло какое-то событие",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
+    },
+    {
+      "id": "3",
+      "title": "Уведомление 3",
+      "description": "Произошло какое-то событие",
+      "userId": "1",
+      "href": "http://localhost:3000/admin"
+    },
+    {
+      "id": "4",
+      "title": "Уведомление 4",
+      "description": "Произошло какое-то событие",
+      "userId": "1"
+    },
+    {
+      "id": "5",
+      "title": "Уведомление 1",
+      "description": "Произошло какое-то событие",
       "userId": "2"
     }
   ],
   "articles": [
     {
       "id": "1",
-      "title": "javascript news",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Javascript news СВЕЖАЯ",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
+      "createdAt": "26.04.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -86,12 +108,12 @@
     },
     {
       "id": "2",
-      "title": "Grind never stops",
-      "subtitle": "Why you should never give up?",
-      "img": "https://wallpapers.com/images/hd/david-goggins-in-shades-8f73y0dmfi8nlxjs.jpg",
-      "views": 1022,
-      "userId": "2",
-      "createdAt": "09.06.2023",
+      "title": "Python news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
+      "views": 5204,
+      "createdAt": "26.02.2022",
+      "userId": "1",
       "type": [
         "IT"
       ],
@@ -110,12 +132,12 @@
     },
     {
       "id": "3",
-      "title": "javascript news",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
-      "views": 1022,
+      "title": "Kotlin news 2019",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
+      "views": 94002,
+      "createdAt": "26.02.2019",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -134,12 +156,12 @@
     },
     {
       "id": "4",
-      "title": "rub",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
-      "views": 1022,
+      "title": "Scala news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://coursefreedl.com/wp-content/uploads/2020/01/Scala-Zero-To-Hero-Complete-Guide.jpg",
+      "views": 10222,
+      "createdAt": "24.01.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -158,12 +180,12 @@
     },
     {
       "id": "5",
-      "title": "rust",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
-      "views": 1022,
+      "title": "Golang news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://cdn-front.kwork.ru/pics/t3/88/16350941-1630390388.jpg",
+      "views": 10222,
+      "createdAt": "26.02.2020",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -182,12 +204,12 @@
     },
     {
       "id": "6",
-      "title": "javascmfdnvdv",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Java news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://andreyex.ru/wp-content/uploads/2018/05/Kak-ustanovit-Java-s-apt-na-Ubuntu-18.04.jpg",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -206,12 +228,12 @@
     },
     {
       "id": "7",
-      "title": "oregek news",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
-      "views": 1022,
+      "title": "Ruby news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://res.cloudinary.com/practicaldev/image/fetch/s--oqV3akcU--/c_imagga_scale,f_auto,fl_progressive,h_500,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/pgnw91fs7tpxn0wyeqh2.jpg",
+      "views": 100,
+      "createdAt": "21.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -230,12 +252,12 @@
     },
     {
       "id": "8",
-      "title": "kotlin lol",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
-      "views": 1022,
+      "title": "TypeScript news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://miro.medium.com/max/1400/1*aTCN2ctKNoZupUCMP0hQuw.png",
+      "views": 102222,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -254,12 +276,12 @@
     },
     {
       "id": "9",
-      "title": "testettet",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Kotlin news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -278,12 +300,12 @@
     },
     {
       "id": "10",
-      "title": "bmbmbmbscript news",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Python news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -302,12 +324,12 @@
     },
     {
       "id": "11",
-      "title": "idk",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Kotlin news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -326,12 +348,12 @@
     },
     {
       "id": "12",
-      "title": "javascript news",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Python news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -350,12 +372,12 @@
     },
     {
       "id": "13",
-      "title": "rub",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Kotlin news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -374,12 +396,12 @@
     },
     {
       "id": "14",
-      "title": "rust",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Python news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -398,18 +420,42 @@
     },
     {
       "id": "15",
-      "title": "javascmfdnvdv",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Kotlin news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
       "blocks": [
         {
-          "id": "16",
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Python news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
           "type": "TEXT",
           "title": "Заголовок этого блока",
           "paragraphs": [
@@ -422,12 +468,12 @@
     },
     {
       "id": "17",
-      "title": "oregek news",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Kotlin news",
+      "subtitle": "Что нового в JS за 2022 год?",
+      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
         "IT"
       ],
@@ -446,14 +492,14 @@
     },
     {
       "id": "18",
-      "title": "kotlin lol",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "Экономика",
+      "img": "https://www.mirea.ru/upload/iblock/7cf/vvp_rf2018_1.jpg",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
-        "IT"
+        "ECONOMICS"
       ],
       "blocks": [
         {
@@ -469,63 +515,15 @@
       ]
     },
     {
-      "id": "19",
-      "title": "testettet",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
+      "id": "18",
+      "title": "Научная статья - Биология",
+      "subtitle": "БиологиЯ",
+      "img": "https://avatars.mds.yandex.net/get-zen_doc/2746556/pub_5f50dd7e1a1ddf4776aa5569_5f50decd2506f211d1de6284/scale_1200",
       "views": 1022,
+      "createdAt": "26.02.2022",
       "userId": "1",
-      "createdAt": "09.06.2023",
       "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "20",
-      "title": "bmbmbmbscript news",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
-      "views": 1022,
-      "userId": "1",
-      "createdAt": "09.06.2023",
-      "type": [
-        "IT"
-      ],
-      "blocks": [
-        {
-          "id": "1",
-          "type": "TEXT",
-          "title": "Заголовок этого блока",
-          "paragraphs": [
-            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
-            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
-            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "21",
-      "title": "idk",
-      "subtitle": "What's new in js for 2022 year?",
-      "img": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*2T2-TMJHLPYxwfjA8S4Urg.jpeg",
-      "views": 1022,
-      "userId": "1",
-      "createdAt": "09.06.2023",
-      "type": [
-        "IT"
+        "SCIENCE"
       ],
       "blocks": [
         {
@@ -543,22 +541,160 @@
   ],
   "comments": [
     {
+      "id": "1",
+      "text": "some comment",
       "articleId": "1",
-      "userId": "2",
-      "text": "lol",
-      "id": 1
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "text": "some comment 2",
+      "articleId": "1",
+      "userId": "1"
+    },
+    {
+      "id": "3",
+      "text": "some comment 3",
+      "articleId": "1",
+      "userId": "1"
     },
     {
       "articleId": "1",
       "userId": "1",
-      "text": "lol",
-      "id": 2
+      "text": "123",
+      "id": "4Cljjzl"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "123asfasf",
+      "id": "AEM4Dvc"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "123asfasf",
+      "id": "IFEOWl0"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "привет мир",
+      "id": "dBacYRZ"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "хехехехе",
+      "id": "rBX_C-e"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "фыафыа",
+      "id": "5k0ApX-"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "sdfsdfsd",
+      "id": "w-HDIRq"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "asdasdasd",
+      "id": "MVvGQoZ"
+    },
+    {
+      "articleId": "3",
+      "userId": "1",
+      "text": "comment 1",
+      "id": "bAs7YBE"
     },
     {
       "articleId": "2",
       "userId": "1",
-      "text": "python",
-      "id": 3
+      "text": "python!!!",
+      "id": "p5rMadd"
+    },
+    {
+      "articleId": "3",
+      "userId": "1",
+      "text": "123213",
+      "id": "Zu_RNuF"
+    },
+    {
+      "articleId": "8",
+      "userId": "1",
+      "text": "dfdsf",
+      "id": "4rFHQgJ"
+    },
+    {
+      "articleId": "8",
+      "userId": "1",
+      "text": "sdfsdf",
+      "id": "yYEdTI-"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "text": "123213",
+      "id": "TR1yDY6"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "text": "112",
+      "id": "wSAhqy5"
+    },
+    {
+      "articleId": "18",
+      "userId": "1",
+      "text": "12",
+      "id": "r6b1z-N"
+    },
+    {
+      "articleId": "18",
+      "userId": "2",
+      "text": "привет",
+      "id": "DENfTu6"
+    },
+    {
+      "articleId": "7",
+      "userId": "2",
+      "text": "33",
+      "id": "Ps59wrg"
+    },
+    {
+      "articleId": "7",
+      "userId": "2",
+      "text": "123",
+      "id": "zzYVth3"
+    },
+    {
+      "articleId": "7",
+      "userId": "2",
+      "text": "123",
+      "id": "WjF4c_d"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "privet",
+      "id": "fta748h"
+    },
+    {
+      "articleId": "2",
+      "userId": "2",
+      "text": "питон топ",
+      "id": "ZlmlUrg"
+    },
+    {
+      "articleId": "7",
+      "userId": "1",
+      "text": "123",
+      "id": "KmtWJR_"
     }
   ],
   "users": [
@@ -566,39 +702,52 @@
       "id": "1",
       "username": "admin",
       "password": "123",
-      "role": "ADMIN",
-      "avatar": "https://resizing.flixster.com/_GrCbFNcz21ZlOhK0rGPoz2Zis8=/206x305/v2/https://flxt.tmsimg.com/assets/p13937884_p_v8_ab.jpg"
+      "roles": [
+        "ADMIN"
+      ],
+      "avatar": "https://yakutsk.ru/wp-content/uploads/2022/07/12/bystrov_haker.jpeg"
     },
     {
       "id": "2",
       "username": "user",
       "password": "123",
-      "role": "USER",
-      "avatar": "https://avatars.githubusercontent.com/u/8957173?v=4"
+      "roles": [
+        "USER"
+      ],
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
+    },
+    {
+      "id": "3",
+      "username": "manager",
+      "password": "123",
+      "roles": [
+        "MANAGER"
+      ],
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ],
   "profile": [
     {
       "id": "1",
-      "first": "Will",
-      "lastname": "Smithlolol",
-      "age": 23,
-      "currency": "EURO",
-      "country": "USA",
-      "city": "New York",
-      "username": "admin",
-      "avatar": "https://resizing.flixster.com/_GrCbFNcz21ZlOhK0rGPoz2Zis8=/206x305/v2/https://flxt.tmsimg.com/assets/p13937884_p_v8_ab.jpg"
+      "first": "timur",
+      "lastname": "ulbi",
+      "age": 465,
+      "currency": "RUB",
+      "country": "Belarus",
+      "city": "Moscow",
+      "username": "admin213",
+      "avatar": "https://yt3.ggpht.com/ytc/AKedOLTYUJxG8Hu036PQ_TXpMLq2fG8Kj8NZI4h0lbn_3g=s900-c-k-c0x00ffffff-no-rj"
     },
     {
       "id": "2",
-      "first": "Jordan",
-      "lastname": "Walke",
-      "age": 23,
-      "currency": "USD",
-      "country": "USA",
-      "city": "Washington",
-      "username": "jwalk",
-      "avatar": "https://avatars.githubusercontent.com/u/8957173?v=4"
+      "first": "ulbi tv",
+      "lastname": "asf",
+      "age": 465,
+      "currency": "EUR",
+      "country": "Ukraine",
+      "city": "Moscow",
+      "username": "ulbi tv",
+      "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
     }
   ]
 }
