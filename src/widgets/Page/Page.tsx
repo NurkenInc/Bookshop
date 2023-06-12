@@ -18,6 +18,8 @@ interface PageProps {
   onScrollEnd?: () => void,
 }
 
+export const PAGE_ID = 'PAGE_ID';
+
 export const Page = memo((props: PageProps) => {
   const { className, children, onScrollEnd } = props;
   const wrapperRef = useRef() as MutableRefObject<HTMLDivElement>;
@@ -37,7 +39,6 @@ export const Page = memo((props: PageProps) => {
   });
 
   const onScroll = useThrottle((e: UIEvent<HTMLDivElement>) => {
-    console.log('scroll');
     dispatch(UIActions.setScrollPosition({
       position: e.currentTarget.scrollTop,
       path: pathname,
@@ -45,7 +46,12 @@ export const Page = memo((props: PageProps) => {
   }, 500);
 
   return (
-    <section onScroll={onScroll} ref={wrapperRef} className={classNames(cls.Page, {}, [className])}>
+    <section
+      onScroll={onScroll}
+      ref={wrapperRef}
+      className={classNames(cls.Page, {}, [className])}
+      id={PAGE_ID}
+    >
       {children}
       {onScrollEnd ? <div ref={triggerRef} className={cls.trigger} /> : null}
     </section>

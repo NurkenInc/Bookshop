@@ -51,7 +51,7 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
               {t('Edit')}
             </Button>
           ) : (
-            <>
+            <div className={cls.btnsWrapper}>
               <Button
                 theme={ButtonTheme.OUTLINE_RED}
                 className={cls.editBtn}
@@ -66,7 +66,7 @@ export const ProfilePageHeader = ({ className }: ProfilePageHeaderProps) => {
               >
                 {t('Save')}
               </Button>
-            </>
+            </div>
           )}
         </div>
       )}
