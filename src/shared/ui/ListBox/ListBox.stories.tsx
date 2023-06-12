@@ -6,6 +6,9 @@ const meta: Meta<typeof ListBox> = {
   title: 'shared/ListBox',
   component: ListBox,
   tags: ['autodocs'],
+  decorators: [
+    (Story) => <div style={{ padding: '150px' }}><Story /></div>,
+  ],
   argTypes: {
   },
 };
@@ -41,12 +44,39 @@ export const Primary: Story = {
   },
 };
 
-export const PrimaryBottom: Story = {
+export const PrimaryBottomLeft: Story = {
   args: {
     items: options,
     defaultValue: 'Pick a value',
     value: 'Preview 2',
-    direction: 'bottom',
+    direction: 'bottom left',
+  },
+};
+
+export const PrimaryTopRight: Story = {
+  args: {
+    items: options,
+    defaultValue: 'Pick a value',
+    value: 'Preview 2',
+    direction: 'top right',
+  },
+};
+
+export const PrimaryTopLeft: Story = {
+  args: {
+    items: options,
+    defaultValue: 'Pick a value',
+    value: 'Preview 2',
+    direction: 'top left',
+  },
+};
+
+export const PrimaryBottomRight: Story = {
+  args: {
+    items: options,
+    defaultValue: 'Pick a value',
+    value: 'Preview 2',
+    direction: 'bottom right',
   },
 };
 

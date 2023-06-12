@@ -42,7 +42,7 @@ export const CurrencySelect = memo((props: CurrencySelectProps) => {
       label={t('Pick currency')}
       className={classNames('', {}, [className])}
       readonly={readonly}
-      direction="top"
+      direction="top right"
     />
   );
 });
