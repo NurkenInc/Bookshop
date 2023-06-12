@@ -45,7 +45,7 @@ export const Input = memo((props: InputProps) => {
   };
 
   return (
-    <div className={classNames(cls.InputWrapper)}>
+    <div className={classNames(cls.InputWrapper, mods, [className])}>
       <input
         ref={ref}
         className={classNames(cls.input, mods, [className])}
