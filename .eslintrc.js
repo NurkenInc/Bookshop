@@ -24,7 +24,8 @@ module.exports = {
     'react',
     '@typescript-eslint',
     'i18next',
-    'react-hooks'
+    'react-hooks',
+    'project-fsd-arch'
   ],
   ignorePatterns: ['.eslintrc.js'],
   rules: {
@@ -56,6 +57,7 @@ module.exports = {
     "no-undef": "off",
     "react/no-array-index-key": "warn",
     "arrow-body-style": "off",
+    "project-fsd-arch/path-checker": "error",
   },
   overrides: [
     {
