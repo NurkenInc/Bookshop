@@ -695,6 +695,36 @@
       "userId": "1",
       "text": "123",
       "id": "KmtWJR_"
+    },
+    {
+      "articleId": "8",
+      "userId": "1",
+      "text": "lol",
+      "id": "Pr_MezM"
+    },
+    {
+      "articleId": "8",
+      "userId": "1",
+      "text": "lol",
+      "id": "f9Bq16p"
+    },
+    {
+      "articleId": "8",
+      "userId": "1",
+      "text": "gg",
+      "id": "nL4Dv1o"
+    },
+    {
+      "articleId": "8",
+      "userId": "1",
+      "text": "",
+      "id": "FLFWH_j"
+    },
+    {
+      "articleId": "8",
+      "userId": "1",
+      "text": "lol",
+      "id": "iqEXw0y"
     }
   ],
   "users": [
@@ -729,11 +759,11 @@
   "profile": [
     {
       "id": "1",
-      "first": "timur",
+      "first": "nknkld",
       "lastname": "ulbi",
       "age": 465,
-      "currency": "RUB",
-      "country": "Belarus",
+      "currency": "EURO",
+      "country": "FINLAND",
       "city": "Moscow",
       "username": "admin213",
       "avatar": "https://yt3.ggpht.com/ytc/AKedOLTYUJxG8Hu036PQ_TXpMLq2fG8Kj8NZI4h0lbn_3g=s900-c-k-c0x00ffffff-no-rj"

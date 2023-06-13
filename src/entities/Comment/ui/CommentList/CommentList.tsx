@@ -18,7 +18,7 @@ export const CommentList = memo((props: CommentListProps) => {
   const { t } = useTranslation();
 
   if (isLoading) {
-    <VStack gap="16" className={classNames('', {}, [className])}>
+    <VStack gap="16" max className={classNames('', {}, [className])}>
       <CommentCard isLoading />
       <CommentCard isLoading />
       <CommentCard isLoading />

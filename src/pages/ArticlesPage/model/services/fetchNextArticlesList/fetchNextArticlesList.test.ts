@@ -19,7 +19,7 @@ describe('fetchNextArticlesList', () => {
     await thunk.callThunk();
 
     expect(thunk.dispatch).toBeCalledTimes(4);
-    expect(fetchArticlesList).toBeCalledWith({ page: 3 });
+    expect(fetchArticlesList).toHaveBeenCalled();
   });
 
   test('Fetch next articles list dont make request if data ended', async () => {

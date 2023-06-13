@@ -4,7 +4,7 @@ import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
 import AvatarSrc from 'shared/assets/tests/avatar.png';
 import { getProfileValidateErrors } from './getProfileValidateErrors';
-import { ValidateProfileError } from '../../types/profile';
+import { ValidateProfileError } from '../../types/editableProfileCardSchema';
 
 describe('getProfileValidateErrors', () => {
   test('Should return profile validate errors', () => {

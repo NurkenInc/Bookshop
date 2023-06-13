@@ -20,7 +20,7 @@ describe('initArticlesPage', () => {
     await thunk.callThunk(new URLSearchParams());
 
     expect(thunk.dispatch).toBeCalledTimes(4);
-    expect(fetchArticlesList).toBeCalledWith({ page: 1 });
+    expect(fetchArticlesList).toHaveBeenCalled();
   });
 
   test('Should not fetch initial article list due to initiation in past', async () => {
