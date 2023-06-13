@@ -5,7 +5,6 @@ import { Text, TextSize } from 'shared/ui/Text/Text';
 import { VStack } from 'shared/ui/Stack';
 import { ArticleList } from 'entities/Article';
 import { useArticleRecommendationsList } from '../../api/articleRecommendationsApi';
-import cls from './ArticleRecommendationsList.module.scss';
 
 interface ArticleRecommendationsListProps {
   className?: string;
@@ -16,7 +15,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
   const { t } = useTranslation();
   const { data: articles, isLoading, error } = useArticleRecommendationsList(3);
 
-  if (isLoading || error) {
+  if (isLoading || error || !articles) {
     return null;
   }
 
@@ -30,6 +29,7 @@ export const ArticleRecommendationsList = memo((props: ArticleRecommendationsLis
         articles={articles}
         isLoading={isLoading}
         target="_blank"
+        virtualization={false}
       />
     </VStack>
   );
