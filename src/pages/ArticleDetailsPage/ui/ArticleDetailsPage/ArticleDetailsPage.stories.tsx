@@ -7,7 +7,7 @@ import { ArticleType, Article, ArticleBlogType } from 'entities/Article/model/ty
 import ArticleDetailsPage from './ArticleDetailsPage';
 
 const meta: Meta<typeof ArticleDetailsPage> = {
-  title: 'pages/ArticleDetailsPage',
+  title: 'pages/ArticleDetails/ArticleDetailsPage',
   component: ArticleDetailsPage,
   tags: ['autodocs'],
   argTypes: {
