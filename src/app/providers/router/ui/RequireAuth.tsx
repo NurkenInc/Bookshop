@@ -1,12 +1,31 @@
-import { getUserAuthData } from 'entities/User';
+import { getUserAuthData, getUserRoles } from 'entities/User';
+import { UserRole } from 'entities/User/model/types/UserSchema';
+import { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { useLocation, Navigate } from 'react-router-dom';
 // import { Navigate } from 'react-router-dom';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 
-export function RequireAuth({ children }: { children: JSX.Element }) {
+interface RequireAuthProps {
+  children: JSX.Element,
+  roles?: UserRole[],
+}
+
+export function RequireAuth({ children, roles }: RequireAuthProps) {
   const auth = useSelector(getUserAuthData);
   const location = useLocation();
+  const userRoles = useSelector(getUserRoles);
+
+  const hasRequiredRoles = useMemo(() => {
+    if (!roles) {
+      return true;
+    }
+
+    return roles.some((requiredRole) => {
+      const hasRole = userRoles.includes(requiredRole);
+      return hasRole;
+    });
+  }, [roles, userRoles]);
 
   if (!auth) {
     // Redirect them to the / page, but save the current location they were
@@ -14,6 +33,10 @@ export function RequireAuth({ children }: { children: JSX.Element }) {
     // along to that page after they login, which is a nicer user experience
     // than dropping them off on the home page.
     return <Navigate to={RoutePath.main} state={{ from: location }} replace />;
+  }
+
+  if (!hasRequiredRoles) {
+    return <Navigate to={RoutePath.forbidden} state={{ from: location }} replace />;
   }
 
   return children;
