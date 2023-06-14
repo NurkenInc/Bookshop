@@ -18,7 +18,8 @@ import {
 } from '../../model/selectors/getArticleDetails';
 import cls from './ArticleDetails.module.scss';
 import { articleDetailsReducer } from '../../model/slices/articleDetailsSlice';
-import { ArticleBlock, ArticleBlogType } from '../../model/types/article';
+import { ArticleBlock } from '../../model/types/article';
+import { ArticleBlogType } from '../../model/consts/articleConsts';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/ArticleImageBlockComponent';
 

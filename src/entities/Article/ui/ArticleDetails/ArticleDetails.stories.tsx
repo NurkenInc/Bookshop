@@ -4,7 +4,8 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 import { Theme } from 'app/providers/ThemeProvider';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
 import { ArticleDetails } from './ArticleDetails';
-import { Article, ArticleBlogType, ArticleType } from '../../model/types/article';
+import { Article } from '../../model/types/article';
+import { ArticleBlogType, ArticleType } from '../../model/consts/articleConsts';
 
 const meta: Meta<typeof ArticleDetails> = {
   title: 'entities/Article/ArticleDetails',

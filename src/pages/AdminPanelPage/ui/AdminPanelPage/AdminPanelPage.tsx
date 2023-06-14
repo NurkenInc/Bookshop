@@ -14,7 +14,7 @@ const AdminPanelPage = memo((props: AdminPanelPageProps) => {
 
   return (
     <Page>
-      AdminPanelPage
+      {t('Admin Panel')}
     </Page>
   );
 });

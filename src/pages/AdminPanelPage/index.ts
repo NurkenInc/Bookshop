@@ -1,4 +1,4 @@
-export { AdminPanelPageSchema } from './model/types/adminPanelPageSchema';
+export type { AdminPanelPageSchema } from './model/types/adminPanelPageSchema';
 
 export {
   AdminPanelPageAsync as AdminPanelPage,
