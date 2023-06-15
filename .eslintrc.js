@@ -38,7 +38,7 @@ module.exports = {
     'react-hooks',
     'project-fsd-arch'
   ],
-  ignorePatterns: ['.eslintrc.js', 'reports'],
+  ignorePatterns: ['.eslintrc.js', 'reports', 'index.html'],
   rules: {
     'quotes': [2, 'single'],
     'semi': [2, 'always'],
