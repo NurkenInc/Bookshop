@@ -1,8 +1,8 @@
 import { DeepPartial } from '@reduxjs/toolkit';
-import { StateSchema } from 'app/providers/StoreProvider';
-import { Country } from 'entities/Country';
-import { Currency } from 'entities/Currency';
-import AvatarSrc from 'shared/assets/tests/avatar.png';
+import { StateSchema } from '@/app/providers/StoreProvider';
+import { Country } from '@/entities/Country';
+import { Currency } from '@/entities/Currency';
+import AvatarSrc from '@/shared/assets/tests/avatar.png';
 import { getProfileReadonly } from './getProfileReadonly';
 
 describe('getProfileReadonly', () => {

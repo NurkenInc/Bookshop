@@ -1,10 +1,10 @@
-import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
-import TilesIcon from 'shared/assets/icons/bar.svg';
-import ListIcon from 'shared/assets/icons/detailed.svg';
-import { Icon } from 'shared/ui/Icon/Icon';
-import { ButtonTheme, Button } from 'shared/ui/Button/Button';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import TilesIcon from '@/shared/assets/icons/bar.svg';
+import ListIcon from '@/shared/assets/icons/detailed.svg';
+import { Icon } from '@/shared/ui/Icon/Icon';
+import { ButtonTheme, Button } from '@/shared/ui/Button/Button';
 import cls from './ArticleViewSelector.module.scss';
 import { ArticleView } from '../../model/consts/articleConsts';
 

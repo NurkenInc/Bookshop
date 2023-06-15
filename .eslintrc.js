@@ -1,4 +1,15 @@
 module.exports = {
+  settings: {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   env: {
     browser: true,
     es2021: true,
@@ -58,6 +69,7 @@ module.exports = {
     "react/no-array-index-key": "warn",
     "arrow-body-style": "off",
     "project-fsd-arch/path-checker": "error",
+    "import/extensions": "off", // fix
   },
   overrides: [
     {
