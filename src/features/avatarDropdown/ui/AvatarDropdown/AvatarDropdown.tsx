@@ -1,12 +1,13 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Dropdown } from 'shared/ui/Popups';
 import { memo, useCallback } from 'react';
+import { useTranslation } from 'react-i18next';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { useDispatch, useSelector } from 'react-redux';
+import { Avatar } from 'shared/ui/Avatar/Avatar';
 import {
   userActions, isUserAdmin, isUserManager, getUserAuthData,
 } from 'entities/User';
-import cls from './AvatarDropdown.module.scss';
 
 interface AvatarDropdownProps {
   className?: string,
@@ -18,6 +19,7 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
   const isAdmin = useSelector(isUserAdmin);
   const isManager = useSelector(isUserManager);
   const authData = useSelector(getUserAuthData);
+  const { t } = useTranslation();
 
   const onLogout = useCallback(() => {
     dispatch(userActions.logout());
@@ -31,7 +33,7 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
 
   return (
     <Dropdown
-      className={classNames(cls.AvatarDropdown, {}, [className])}
+      className={classNames('', {}, [className])}
       direction="bottom left"
       items={[
         ...(isAdminPanelAvailable ? [{

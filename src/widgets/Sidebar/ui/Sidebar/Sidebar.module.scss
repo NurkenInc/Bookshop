@@ -24,7 +24,7 @@
   position: absolute;
   right: 25px;
   top: 20px;
-  z-index: 100000;
+  z-index: var(--collapse-btn-z-index);
 }
 
 .items {

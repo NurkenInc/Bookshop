@@ -30,6 +30,8 @@
 
   // Индексы
   --modal-z-index: 10;
+  --collapse-btn-z-index: 5;
+  --drawer-z-index: 1000;
 
   // Цвета
   --overlay-color: rgb(0 0 0 / 60%);
@@ -41,4 +43,5 @@
   --rounded-l: 15px;
   --rounded-xl: 20px;
   --rounded-full: 50%;
+
 }
