@@ -60,3 +60,9 @@
   touch-action: none;
   padding: 15px;
 }
+
+.isClosing {
+  .content {
+    transform: translateY(100%);
+  }
+}
