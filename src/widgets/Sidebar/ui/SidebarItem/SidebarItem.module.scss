@@ -1,0 +1,25 @@
+.item {
+  cursor: pointer;
+  color: var(--bg-color);
+  border-top: 1px solid var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+  border-radius: var(--rounded-l);
+  opacity: 1;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.link {
+  margin: 20px;
+}
+
+.collapsed {
+  .link {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s linear, opacity 0.2s linear;
+  }
+}

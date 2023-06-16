@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Inter:wght@300&family=Josefin+Sans:ital,wght@1,300&family=Merienda&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Inter:wght@300;600&family=Josefin+Sans:ital,wght@1,300&family=Merienda&display=swap");
+
+:root {
+  --font-family-main: "Inter", sans-serif;
+
+  // s
+  --font-size-s: 12px;
+  --font-line-s: 20px;
+  --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
+
+  // sm
+  --font-size-sm: 14px;
+  --font-line-sm: 22px;
+  --font-sm: var(--font-size-sm) / var(--font-line-sm) var(--font-family-main);
+
+  // m
+  --font-size-m: 16px;
+  --font-line-m: 24px;
+  --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+
+  // l
+  --font-size-l: 20px;
+  --font-line-l: 28px;
+  --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+
+  // xl
+  --font-size-xl: 24px;
+  --font-line-xl: 32px;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+
+  // Sizes
+  --navbar-height: 65px;
+  --sidebar-width: 300px;
+  --sidebar-width-collapsed: 0;
+
+  // Indexes
+  --modal-z-index: 100;
+  --colapse-btn-z-index: 51;
+  --drawer-z-index: 200;
+  --overlay-z-index: 90;
+
+  // Colors
+  --overlay-color: rgb(0 0 0 / 60%);
+  --blue-light: #1683f3;
+  --blue-dark: #1e8bc7;
+  --red-light: #e03e57;
+  --red-dark: #b11b31;
+  --yellow-light: #feb500;
+  --yellow-dark: #c58e02;
+
+  // Radius
+  --rounded-m: 5px;
+  --rounded-l: 15px;
+  --rounded-xl: 20px;
+  --rounded-full: 50%;
+}
