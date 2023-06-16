@@ -779,5 +779,58 @@
       "username": "ulbi tv",
       "avatar": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png"
     }
+  ],
+  "article-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Nice article",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Top article",
+      "userId": "1",
+      "articleId": "2"
+    },
+    {
+      "id": "1",
+      "rate": 5,
+      "feedback": "Very nice",
+      "userId": "1",
+      "articleId": "3"
+    },
+    {
+      "userId": "1",
+      "articleId": "7",
+      "rate": 4,
+      "feedback": "lol",
+      "id": "MUb-IF6"
+    },
+    {
+      "userId": "1",
+      "articleId": "8",
+      "rate": 5,
+      "feedback": "lol",
+      "id": "kvyIyOF"
+    }
+  ],
+  "profile-ratings": [
+    {
+      "id": "1",
+      "rate": 4,
+      "feedback": "Nice article",
+      "userId": "1",
+      "articleId": "1"
+    },
+    {
+      "id": "2",
+      "rate": 2,
+      "feedback": "I cant agree",
+      "userId": "1",
+      "profileId": "2"
+    }
   ]
 }
