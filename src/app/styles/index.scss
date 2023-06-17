@@ -9,10 +9,11 @@ body {
 }
 
 .app {
+  transition: 0.3s background ease;
   background: var(--bg-color);
   min-height: 100vh;
 }
 
-.content-page {
+.page-content {
   display: flex;
 }

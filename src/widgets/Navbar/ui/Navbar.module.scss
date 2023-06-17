@@ -1,6 +1,9 @@
 .Navbar {
   height: var(--navbar-height);
-  background: var(--inverted-bg-color);
+  background: var(--bg-color);
+  border-bottom: 1px solid var(--primary-color);
+  box-shadow: 0 0 15px var(--black-dark);
+  transition: 0.3s background ease;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,8 +12,4 @@
 
 .title {
   width: var(--sidebar-width);
-}
-
-.login {
-  margin-right: 15px;
 }

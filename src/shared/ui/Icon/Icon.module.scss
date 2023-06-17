@@ -1,7 +1,9 @@
 .Icon {
   fill: var(--bg-color);
+  stroke: var(--bg-color);
 }
 
 .inverted {
   fill: var(--inverted-bg-color);
+  stroke: var(--inverted-bg-color);
 }

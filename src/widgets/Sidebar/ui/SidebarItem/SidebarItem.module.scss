@@ -1,8 +1,9 @@
 .item {
   cursor: pointer;
-  color: var(--bg-color);
-  border-top: 1px solid var(--secondary-color);
-  border-bottom: 1px solid var(--secondary-color);
+  color: var(--inverted-bg-color);
+
+  // border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
   border-radius: var(--rounded-l);
   opacity: 1;
   width: 100%;

@@ -1,4 +1,7 @@
 {
   "Login": "Login",
-  "Register": "Register"
+  "Register": "Register",
+  "Logout": "Logout",
+  "Main": "Main",
+  "Language": "EN"
 }

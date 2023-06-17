@@ -9,7 +9,7 @@ import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
 import { BuildOptions } from './types/config';
 
 export function buildPlugins({
-  paths, isDev, apiUrl, project,
+  paths, isDev, apiUrl, appUrl, project,
 }: BuildOptions): webpack.WebpackPluginInstance[] {
   const plugins = [
     new HTMLWebpackPlugin({
@@ -23,6 +23,7 @@ export function buildPlugins({
     new webpack.DefinePlugin({
       __IS_DEV__: JSON.stringify(isDev),
       __API__: JSON.stringify(apiUrl),
+      __APP__: JSON.stringify(appUrl),
       __PROJECT__: JSON.stringify(project),
     }),
     new CopyPlugin({

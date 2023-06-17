@@ -101,7 +101,8 @@
     "webpack-dev-server": "^4.7.4"
   },
   "dependencies": {
-    "@headlessui/react": "^1.6.6",
+    "@auth0/auth0-react": "^2.1.1",
+    "@headlessui/react": "^1.7.15",
     "@react-spring/web": "^9.7.1",
     "@reduxjs/toolkit": "^1.8.0",
     "@types/react-virtualized": "^9.21.22",
@@ -110,6 +111,8 @@
     "i18next": "^21.9.0",
     "i18next-browser-languagedetector": "^6.1.3",
     "i18next-http-backend": "^1.3.2",
+    "install": "^0.13.0",
+    "npm": "^9.7.1",
     "react": "^18.2.0",
     "react-device-detect": "^2.2.3",
     "react-dom": "^18.2.0",

@@ -1,4 +1,5 @@
 import React, { ErrorInfo, ReactNode, Suspense } from 'react';
+import { ErrorPage } from '@/pages/ErrorPage/ui/ErrorPage';
 
 export interface ErrorBoundaryProps {
   children: ReactNode
@@ -29,7 +30,7 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
     if (hasError) {
       return (
         <Suspense fallback="">
-          <div>Error Page</div>
+          <ErrorPage />
         </Suspense>
       );
     }

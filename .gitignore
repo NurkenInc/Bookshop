@@ -8,6 +8,7 @@ idea
 # files
 # ///////TO DELETE\\\\\\\
 verions.txt
+.env
 # ///////TO DELETE\\\\\\\
 
 /storybook-static

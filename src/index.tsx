@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import { StoreProvider } from '@/app/providers/StoreProvider';
 import { ThemeProvider } from '@/app/providers/ThemeProvider';
+import { AuthProvider } from '@/app/providers/AuthProvider';
 import { ErrorBoundary } from '@/app/providers/ErrorBoundery';
 import App from './app/App';
 import './app/styles/index.scss';
@@ -19,9 +20,11 @@ root.render(
   <BrowserRouter>
     <StoreProvider>
       <ErrorBoundary>
-        <ThemeProvider>
-          <App />
-        </ThemeProvider>
+        <AuthProvider>
+          <ThemeProvider>
+            <App />
+          </ThemeProvider>
+        </AuthProvider>
       </ErrorBoundary>
     </StoreProvider>
   </BrowserRouter>,

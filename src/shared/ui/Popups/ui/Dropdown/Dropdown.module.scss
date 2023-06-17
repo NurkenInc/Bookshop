@@ -1,0 +1,49 @@
+.menu {
+  background: none;
+  position: absolute;
+  z-index: var(--popup-z-index);
+  border-radius: var(--rounded-m);
+  border: 1px solid white;
+  box-shadow: 2px 2px 5px var(--inverted-bg-color);
+  flex-direction: column;
+  display: flex;
+}
+
+.item {
+  width: 100%;
+  border: none;
+  border-radius: var(--rounded-m);
+  padding: 4px 14px;
+  background-color: none;
+  outline: none;
+  color: var(--black-dark);
+  cursor: pointer;
+}
+
+.enter {
+  transition: ease-out 0.1s;
+}
+
+.enterFrom {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.enterTo { 
+  transform: scale(1);
+  opacity: 1;
+}
+
+.leave {
+  transition: ease-in 0.1s;
+}
+
+.leaveFrom {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.leaveTo {
+  opacity: 0;
+  transform: scale(0.95);
+}

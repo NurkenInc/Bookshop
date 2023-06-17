@@ -1,0 +1,11 @@
+.ErrorPage {
+  min-height: 100vh;
+  width: 100%;
+  background: var(--bg-color);
+  color: var(--inverted-bg-color);
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

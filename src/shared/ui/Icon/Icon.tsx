@@ -1,4 +1,4 @@
-import { ReactSVGElement, memo } from 'react';
+import { ReactNode, ReactSVGElement, memo } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Icon.module.scss';
 
@@ -18,7 +18,7 @@ export const Icon = memo((props: IconProps) => {
 
   return (
     <Svg
-      className={classNames(inverted ? cls.inverted : cls.Icon, {}, [])}
+      className={classNames(inverted ? cls.inverted : cls.Icon, {}, [className])}
       {...otherProps}
     />
   );

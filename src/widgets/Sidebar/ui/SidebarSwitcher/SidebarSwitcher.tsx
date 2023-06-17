@@ -22,6 +22,7 @@ export const SidebarSwitcher = memo((props: SidebarSwitcherProps) => {
     >
       <Icon
         Svg={MenuIcon}
+        inverted
         width={30}
         height={30}
       />

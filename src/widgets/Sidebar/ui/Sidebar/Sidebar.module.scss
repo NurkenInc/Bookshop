@@ -1,10 +1,23 @@
 .Sidebar {
   width: var(--sidebar-width);
-  background: var(--inverted-bg-color);
-  min-height: 100vh;
-  transition: 0.5s width;
+  background: var(--bg-color);
+  border-right: 1px solid var(--primary-color);
+  min-height: calc(100vh - var(--navbar-height));
+  position: relative;
+  transition: 0.5s width, 0.3s background ease;
+}
+
+.switchers {
+  position: absolute;
+  bottom: 20px;
 }
 
 .collapsed {
   width: var(--sidebar-width-collapsed);
+
+  .switchers {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s linear, opacity 0.2s linear;
+  }
 }

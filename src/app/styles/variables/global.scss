@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Inter:wght@300&family=Josefin+Sans:ital,wght@1,300&family=Merienda&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Inter:wght@300;600&family=Josefin+Sans:ital,wght@1,300&family=Merienda&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&family=Inter:wght@300;400;500;600&family=Josefin+Sans:ital,wght@1,300&family=Merienda&display=swap');
 
 :root {
   --font-family-main: "Inter", sans-serif;
@@ -39,6 +39,7 @@
   --colapse-btn-z-index: 51;
   --drawer-z-index: 200;
   --overlay-z-index: 90;
+  --popup-z-index: 80;
 
   // Colors
   --overlay-color: rgb(0 0 0 / 60%);
@@ -48,9 +49,11 @@
   --red-dark: #b11b31;
   --yellow-light: #feb500;
   --yellow-dark: #c58e02;
+  --black-light: #202020;
+  --black-dark: #000;
 
   // Radius
-  --rounded-m: 5px;
+  --rounded-m: 6px;
   --rounded-l: 15px;
   --rounded-xl: 20px;
   --rounded-full: 50%;
