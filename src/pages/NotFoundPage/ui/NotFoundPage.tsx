@@ -26,7 +26,7 @@ export const NotFoundPage = memo((props: NotFoundPageProps) => {
         theme={ButtonTheme.BACKGROUND_INVERTED}
       >
         <AppLink to="/">
-          {t('Return to home')}
+          <Text text={t('Return to home')} theme={TextTheme.BACKGROUND} />
         </AppLink>
       </Button>
     </div>

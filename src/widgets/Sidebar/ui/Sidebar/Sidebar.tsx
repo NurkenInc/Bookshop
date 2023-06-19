@@ -1,13 +1,11 @@
-import { memo, useMemo, useState } from 'react';
+import { memo, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './Sidebar.module.scss';
 import { getSidebarItems } from '../../model/selectors/getSidebarItem/getSidebarItem';
 import { SidebarItem } from '../SidebarItem/SidebarItem';
-import { HStack, VStack } from '@/shared/ui/Stack';
-import { Button } from '@/shared/ui/Button/Button';
+import { VStack } from '@/shared/ui/Stack';
 import { useSidebar } from '../../providers/ui/lib/useSidebar';
-import { LangSwitcher } from '@/widgets/LangSwitcher/ui/LangSwitcher';
 
 interface SidebarProps {
   className?: string,
@@ -33,9 +31,6 @@ export const Sidebar = memo((props: SidebarProps) => {
       <VStack>
         {itemsList}
       </VStack>
-      <HStack max justify="center" className={cls.switchers}>
-        <LangSwitcher />
-      </HStack>
     </aside>
   );
 });

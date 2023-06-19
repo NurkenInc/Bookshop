@@ -1,6 +1,6 @@
 .Navbar {
   height: var(--navbar-height);
-  background: var(--bg-color);
+  background: transparent;
   border-bottom: 1px solid var(--primary-color);
   box-shadow: 0 0 15px var(--black-dark);
   transition: 0.3s background ease;

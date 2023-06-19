@@ -1,0 +1,21 @@
+.BooksListItem {
+  flex-grow: 1;
+  width: 30%;
+  margin: 10px 5px;
+
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 761px) and (max-width: 1200px) {
+    width: 45%;
+  }
+}
+
+.content {
+  height: 100%;
+}
+
+.info {
+  gap: 10px;
+}

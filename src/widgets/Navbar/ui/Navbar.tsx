@@ -11,6 +11,7 @@ import { SidebarSwitcher } from '@/widgets/Sidebar/ui/SidebarSwitcher/SidebarSwi
 import { ThemeSwitcher } from '@/widgets/ThemeSwitcher/ui/ThemeSwitcher';
 import { LoginButton } from '@/widgets/LoginButton';
 import { AvatarDropdown } from '@/features/avatarDropdown';
+import { LangSwitcher } from '@/widgets/LangSwitcher/ui/LangSwitcher';
 
 interface NavbarProps {
   className?: string,
@@ -31,7 +32,10 @@ export const Navbar = memo((props: NavbarProps) => {
         />
       </div>
       <HStack max justify="end">
-        <ThemeSwitcher />
+        <HStack gap="8">
+          <ThemeSwitcher />
+          <LangSwitcher />
+        </HStack>
         {isAuthenticated ? (
           <AvatarDropdown />
         ) : (

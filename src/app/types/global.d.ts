@@ -37,6 +37,8 @@ interface ImportMetaEnv {
   readonly VITE_GOOGLE_BOOKS_API: string,
   readonly VITE_AUTH0_DOMAIN: string,
   readonly VITE_CLIENT_ID: string,
+  readonly VITE_GOOGLE_BOOKS_API_BASE_URL: string,
+  readonly VITE_GOOGLE_BOOKS_API_KEY: string,
 }
 
 interface ImportMeta {

@@ -1,0 +1,13 @@
+.BookDetailsPage {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.returnBtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}

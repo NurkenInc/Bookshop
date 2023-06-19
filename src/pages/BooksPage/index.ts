@@ -1,0 +1,1 @@
+export { BooksPageAsync as BooksPage } from './ui/BooksPage/BooksPage.async';

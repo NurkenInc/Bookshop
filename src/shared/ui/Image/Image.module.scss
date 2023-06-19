@@ -1,0 +1,15 @@
+.Image {
+  object-fit: contain;
+}
+
+.rounded {
+  border-radius: var(--rounded-m);
+}
+
+.maxH {
+  height: 100%;
+}
+
+.maxW {
+  width: 100%;
+}
