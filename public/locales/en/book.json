@@ -1,4 +1,14 @@
 {
   "Books not found": "Books not found",
-  "More Info": "More Info"
+  "More Info": "More Info",
+  "Book name, text, author": "Book name, text excerpt, author",
+  "All": "All",
+  "ebooks": "Ebooks",
+  "free-ebooks": "Free",
+  "full": "Full text",
+  "paid-ebooks": "Paid",
+  "partial": "Partial text",
+  "newest": "Newest",
+  "relevance": "Relevance",
+  "Results count": "Results total count"
 }

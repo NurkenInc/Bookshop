@@ -6,7 +6,7 @@ import cls from './AvatarDropdown.module.scss';
 import { Loader } from '@/shared/ui/Loader/Loader';
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
 import { Avatar } from '@/shared/ui/Avatar/Avatar';
-import { Dropdown } from '@/shared/ui/Popups/ui/Dropdown/Dropdown';
+import { Dropdown } from '@/shared/ui/Popups';
 import { Text } from '@/shared/ui/Text/Text';
 
 interface AvatarDropdownProps {

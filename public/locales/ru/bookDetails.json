@@ -7,5 +7,16 @@
   "Short description": "Краткое описание",
   "Saleability": "Возможность покупки",
   "Not for sale": "Не продается",
-  "For sale": "Продается"
+  "For sale": "Продается",
+  "Page count": "Количество страниц",
+  "Category": "Категория",
+  "Not mature": "Для всех",
+  "Mature": "Для взрослых",
+  "Ratings count": "Количество отзывов",
+  "Average rating": "Средняя оценка",
+  "Categories": "Жанры",
+  "Language": "Язык",
+  "EN": "Английский",
+  "RU": "Руский",
+  "Price": "Цена"
 }

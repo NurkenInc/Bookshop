@@ -45,10 +45,15 @@ export const BookDetails = memo((props: BookDetailsProps) => {
   }
 
   const authors = book.volumeInfo.authors.map((author) => (
-    <Text key={author} text={author} theme={TextTheme.INVERTED} />
+    <Text key={author} title={author} theme={TextTheme.INVERTED} />
+  ));
+
+  const categories = book.volumeInfo.categories.map((category) => (
+    <Text key={category} title={category} theme={TextTheme.INVERTED} />
   ));
 
   const saleability = book.saleInfo.saleability === 'NOT_FOR_SALE' ? 'Not for sale' : 'For sale';
+  const maturity = book.volumeInfo.maturityRating === 'NOT_MATURE' ? 'Not mature' : 'Mature';
 
   return (
     <HStack maxH maxW className={classNames(cls.BookDetails, {}, [className])}>
@@ -69,6 +74,26 @@ export const BookDetails = memo((props: BookDetailsProps) => {
             <Text title={t('Buy')} theme={TextTheme.BACKGROUND} />
           </AppLink>
         </Button>
+        <HStack max gap="4" align="start">
+          <Text title={`${t('Page count')}:`} theme={TextTheme.INVERTED} />
+          <Text title={book.volumeInfo.pageCount} theme={TextTheme.INVERTED} />
+        </HStack>
+        <HStack max gap="4" align="start">
+          <Text title={`${t('Category')}:`} theme={TextTheme.INVERTED} />
+          <Text title={t(maturity)} theme={TextTheme.INVERTED} className={cls.info} />
+        </HStack>
+        {book.volumeInfo.ratingsCount && (
+          <HStack max gap="4" align="start">
+            <Text title={`${t('Ratings count')}:`} theme={TextTheme.INVERTED} />
+            <Text title={book.volumeInfo.ratingsCount} theme={TextTheme.INVERTED} />
+          </HStack>
+        )}
+        {book.volumeInfo.averageRating && (
+          <HStack max gap="4" align="start">
+            <Text title={`${t('Average rating')}:`} theme={TextTheme.INVERTED} />
+            <Text title={`${book.volumeInfo.averageRating} / 5`} theme={TextTheme.INVERTED} className={cls.info} />
+          </HStack>
+        )}
       </VStack>
       <VStack maxH maxW gap="8" justify="start" align="start" className={cls.bookInfo}>
         <HStack max gap="16">
@@ -82,9 +107,25 @@ export const BookDetails = memo((props: BookDetailsProps) => {
           </VStack>
         </HStack>
         <HStack max gap="16">
+          <Text title={`${t('Categories')}:`} theme={TextTheme.INVERTED} />
+          <VStack>
+            {categories}
+          </VStack>
+        </HStack>
+        <HStack max gap="16">
+          <Text title={`${t('Language')}:`} theme={TextTheme.INVERTED} />
+          <Text title={t(book.volumeInfo.language?.toUpperCase() || 'EN')} theme={TextTheme.INVERTED} />
+        </HStack>
+        <HStack max gap="16">
           <Text title={`${t('Saleability')}:`} theme={TextTheme.INVERTED} />
           <Text title={t(saleability)} theme={TextTheme.INVERTED} />
         </HStack>
+        {saleability === 'For sale' && (
+          <HStack max gap="16">
+            <Text title={`${t('Price')}:`} theme={TextTheme.INVERTED} />
+            <Text title={`${book.saleInfo.listPrice.amount}${book.saleInfo.listPrice.currencyCode}`} theme={TextTheme.INVERTED} />
+          </HStack>
+        )}
         <HStack max gap="16" align="start">
           <Text title={`${t('Short description')}:`} theme={TextTheme.INVERTED} />
           <Text text={book.volumeInfo.description} theme={TextTheme.INVERTED} />

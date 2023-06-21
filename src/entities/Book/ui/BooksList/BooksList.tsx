@@ -41,7 +41,7 @@ export const BooksList = memo((props: BooksListProps) => {
       </div>
     );
   }
-  console.log(books);
+
   return (
     <div className={classNames(cls.BooksList, {}, [className])}>
       {books?.map((book) => (

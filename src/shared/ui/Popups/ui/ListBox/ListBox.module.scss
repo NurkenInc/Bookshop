@@ -1,0 +1,80 @@
+.trigger {
+  background: none;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.triggerBtn {
+  padding: 5px 80px;
+}
+
+.options {
+  background: var(--listbox-bg);
+  position: absolute;
+  z-index: var(--listbox-z-index);
+  border-radius: var(--rounded-l);
+  box-shadow: 4px 4px 8px var(--listbox-bg);
+  color: var(--bg-color);
+}
+
+.item {
+  padding: 10px 80px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  margin-right: 4px;
+}
+
+.size_s {
+  .item {
+    padding: 10px 20px;
+  }
+
+  .options {
+    padding: 0 20px;
+  }
+}
+
+.size_m {
+  .item {
+    padding: 10px 40px;
+  }
+
+  .options {
+    padding: 0 40px;
+  }
+}
+
+.size_sm {
+  .item {
+    padding: 10px 50px;
+  }
+
+  .options {
+    padding: 0 50px;
+  }
+}
+
+.size_l {
+  .item {
+    padding: 10px 65px;
+  }
+
+  .options {
+    padding: 0 65px;
+  }
+}
+
+.size_xl {
+  .item {
+    padding: 10px 80px;
+  }
+
+  .options {
+    padding: 0 80px;
+  }
+}
