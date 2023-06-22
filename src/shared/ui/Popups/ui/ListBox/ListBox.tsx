@@ -13,7 +13,7 @@ import { Filter } from '@/entities/Book';
 
 export interface ListBoxItem<T> {
   value: T,
-  content: ReactNode,
+  content: T,
   disabled?: boolean,
 }
 
@@ -35,6 +35,8 @@ export interface ListBoxProps<T> {
   direction?: DropdownDirection,
   label?: string,
   size?: ListBoxSize,
+  max?: boolean,
+  triggerInvisible?: boolean,
 }
 
 export function ListBox <T extends string>(props: ListBoxProps<T>) {
@@ -47,6 +49,8 @@ export function ListBox <T extends string>(props: ListBoxProps<T>) {
     readonly,
     direction = 'bottom left',
     label,
+    max,
+    triggerInvisible,
     size = ListBoxSize.SM,
   } = props;
 
@@ -55,40 +59,46 @@ export function ListBox <T extends string>(props: ListBoxProps<T>) {
     cls[size],
   ];
 
+  const content = (
+    <HListbox.Options className={classNames(cls.options, { [cls.max]: max }, optionsClasses)}>
+      {items?.map((item) => (
+        <HListbox.Option
+          key={item?.value}
+          value={item?.value}
+          disabled={item.disabled}
+          as={Fragment}
+        >
+          {({ active, selected }) => (
+            <li
+              className={
+                classNames(cls.item, { [popupCls.active]: active, [popupCls.disabled]: item.disabled }, [cls[size]])
+              }
+            >
+              {selected && <Icon Svg={CheckIcon} width={20} height={20} />}
+              {item.content}
+            </li>
+          )}
+        </HListbox.Option>
+      ))}
+    </HListbox.Options>
+  );
+
   return (
-    <HStack gap="4">
+    <HStack max={max} gap="4">
       {label && <span className={cls.label}>{label}</span>}
       <HListbox
         disabled={readonly}
         as="div"
         value={value}
         onChange={onChange}
-        className={classNames(cls.ListBox, {}, [className, popupCls.popup])}
+        className={classNames(cls.ListBox, { [cls.max]: max }, [className, popupCls.popup])}
       >
-        <HListbox.Button as="div" className={cls.trigger}>
+        <HListbox.Button as="div" className={classNames(cls.trigger, { [cls.triggerInvisible]: triggerInvisible }, [])}>
           <Button disabled={readonly} theme={ButtonTheme.BACKGROUND_INVERTED} className={cls.triggerBtn}>
             {value || defaultValue}
           </Button>
         </HListbox.Button>
-        <HListbox.Options className={classNames(cls.options, {}, optionsClasses)}>
-          {items?.map((item) => (
-            <HListbox.Option
-              key={item?.value}
-              value={item?.value}
-              disabled={item.disabled}
-              as={Fragment}
-            >
-              {({ active, selected }) => (
-                <li
-                  className={classNames(cls.item, { [popupCls.active]: active, [popupCls.disabled]: item.disabled }, [cls[size]])}
-                >
-                  {selected && <Icon Svg={CheckIcon} width={20} height={20} />}
-                  {item.content}
-                </li>
-              )}
-            </HListbox.Option>
-          ))}
-        </HListbox.Options>
+        {content}
       </HListbox>
     </HStack>
   );

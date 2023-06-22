@@ -8,7 +8,7 @@ import popupCls from '../../styles/popup.module.scss';
 import { mapDirectionClass, mapSizeClass } from '../../styles/const';
 import { Text, TextAlign } from '@/shared/ui/Text/Text';
 
-interface DropdownItem {
+export interface DropdownItem {
   disabled?: boolean,
   content?: ReactNode,
   onClick?: () => void,

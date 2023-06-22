@@ -1,0 +1,29 @@
+.ListBoxInput {
+  width: 100%;
+  position: relative;
+}
+
+.hintsWrapper {
+  position: absolute;
+  max-height: 400px;
+  overflow-y: hidden;
+  z-index: var(--popup-z-index);
+}
+
+.content {
+  color: var(--bg-color);
+}
+
+.item {
+  padding: 10px;
+  background-color: var(--inverted-bg-color);
+  border-radius: 0;
+
+  &:hover {
+    background-color: var(--bg-color);
+
+    .content {
+      color: var(--inverted-bg-color);
+    }
+  }
+}

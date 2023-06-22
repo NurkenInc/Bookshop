@@ -16,8 +16,8 @@ export function createReduxStore(
 ) {
   const rootReducer: ReducersMapObject<StateSchema> = {
     ...asyncReducers,
-    // ui: UIReducer,
-    // [rtkApi.reducerPath]: rtkApi.reducer,
+    ui: UIReducer,
+    [rtkApi.reducerPath]: rtkApi.reducer,
   };
 
   const reducerManager = createReducerManager(rootReducer);
@@ -34,7 +34,7 @@ export function createReduxStore(
       thunk: {
         extraArgument: extraArg,
       },
-    }), // .concat(rtkApi.middleware),
+    }).concat(rtkApi.middleware),
   });
 
   // @ts-ignore

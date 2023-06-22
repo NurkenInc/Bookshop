@@ -18,7 +18,11 @@ export const BooksListItemSkeleton = memo((props: BooksListItemSkeletonProps) =>
   } = props;
 
   if (view === BookView.DETAILED) {
-    <Skeleton width="100%" height={300} />;
+    return (
+      <div className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}>
+        <Skeleton width="98vw" height={300} />
+      </div>
+    );
   }
 
   return (

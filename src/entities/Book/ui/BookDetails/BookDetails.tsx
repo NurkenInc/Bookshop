@@ -5,9 +5,9 @@ import cls from './BookDetails.module.scss';
 import { Book } from '../../model/types/book';
 import { Flex, HStack, VStack } from '@/shared/ui/Stack';
 import { Image } from '@/shared/ui/Image/Image';
-import { Text, TextTheme } from '@/shared/ui/Text/Text';
+import { Text, TextAlign, TextTheme } from '@/shared/ui/Text/Text';
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
-import { AppLink } from '@/shared/ui/AppLink/AppLink';
+import { AppLink, AppLinkSize } from '@/shared/ui/AppLink/AppLink';
 import { Card } from '@/shared/ui/Card/Card';
 import Thumbnail from '@/shared/assets/images/default-thumbnail.png';
 import { PageLoader } from '@/widgets/PageLoader/ui/PageLoader';
@@ -44,11 +44,11 @@ export const BookDetails = memo((props: BookDetailsProps) => {
     );
   }
 
-  const authors = book.volumeInfo.authors.map((author) => (
+  const authors = book.volumeInfo?.authors?.map((author) => (
     <Text key={author} title={author} theme={TextTheme.INVERTED} />
   ));
 
-  const categories = book.volumeInfo.categories.map((category) => (
+  const categories = book.volumeInfo?.categories?.map((category) => (
     <Text key={category} title={category} theme={TextTheme.INVERTED} />
   ));
 
@@ -64,14 +64,14 @@ export const BookDetails = memo((props: BookDetailsProps) => {
           border="15px"
           height="300px"
         />
-        <Button max theme={ButtonTheme.BACKGROUND_INVERTED}>
-          <AppLink to={book?.accessInfo.webReaderLink || '/'} target="_blank">
-            <Text title={t('Read')} theme={TextTheme.BACKGROUND} />
+        <Button max theme={ButtonTheme.BACKGROUND_INVERTED} square>
+          <AppLink max size={AppLinkSize.S} to={book?.accessInfo.webReaderLink || '/'} target="_blank">
+            <Text align={TextAlign.CENTER} title={t('Read')} theme={TextTheme.BACKGROUND} />
           </AppLink>
         </Button>
-        <Button max theme={ButtonTheme.BACKGROUND_INVERTED}>
-          <AppLink to={book?.saleInfo?.buyLink || '/'} target="_blank">
-            <Text title={t('Buy')} theme={TextTheme.BACKGROUND} />
+        <Button max theme={ButtonTheme.BACKGROUND_INVERTED} square>
+          <AppLink max size={AppLinkSize.S} to={book?.saleInfo?.buyLink || '/'} target="_blank">
+            <Text align={TextAlign.CENTER} title={t('Buy')} theme={TextTheme.BACKGROUND} />
           </AppLink>
         </Button>
         <HStack max gap="4" align="start">

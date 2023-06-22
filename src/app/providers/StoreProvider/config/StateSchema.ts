@@ -6,14 +6,12 @@ import { AxiosInstance } from 'axios';
 import { UISchema } from '@/features/UI';
 import { rtkApi } from '@/shared/api/rtkApi';
 import { BooksPageSchema } from '@/pages/BooksPage';
-import { CounterSchema } from '@/pages/TestPage/model/types/CounterSchema';
 
 export interface StateSchema {
-  // ui: UISchema;
-  // [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>;
+  ui: UISchema;
+  [rtkApi.reducerPath]: ReturnType<typeof rtkApi.reducer>;
 
   // Async reducers
-  counter?: CounterSchema;
   booksPage?: BooksPageSchema;
 }
 

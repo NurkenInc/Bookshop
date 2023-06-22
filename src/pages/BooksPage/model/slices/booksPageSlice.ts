@@ -39,7 +39,7 @@ const booksPageSlice = createSlice({
     filter: Filter.ALL,
     printType: PrintType.ALL,
     sort: BooksSortField.RELEVANCE,
-    category: 'fiction',
+    category: '',
     _inited: false,
   }),
   reducers: {
@@ -72,7 +72,6 @@ const booksPageSlice = createSlice({
       state.order = action.payload;
     },
     initState: (state) => {
-      console.log('init');
       const view = localStorage.getItem(BOOKS_VIEW_LOCALSTORAGE_KEY) as BookView;
       state.view = view;
       state.limit = view === BookView.DETAILED ? 5 : 10;
@@ -91,9 +90,10 @@ const booksPageSlice = createSlice({
       })
       .addCase(fetchBooksList.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.hasMore = action.payload.items.length >= state.limit;
+        state.hasMore = action.payload.items && action.payload.items?.length >= state.limit;
         state.totalItems = action.payload.totalItems;
 
+        if (!action.payload.items) return;
         if (action.meta.arg.replace) {
           booksAdapter.setAll(state, action.payload.items);
         } else {

@@ -27,7 +27,6 @@ const BookDetailsPage = memo((props: BookDetailsPageProps) => {
           <Icon Svg={ArrowLeft} width={20} height={20} />
         </AppLink>
       </Button>
-      {/*  todo */}
       <BookDetails
         book={book}
         isLoading={isLoading}

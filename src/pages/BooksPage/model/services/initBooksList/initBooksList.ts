@@ -49,7 +49,7 @@ export const initBooksList = createAsyncThunk<void, URLSearchParams, ThunkConfig
       if (filterFromUrl) {
         booksPageActions.setFilter(filterFromUrl);
       }
-      console.log('init service');
+
       dispatch(booksPageActions.initState());
       dispatch(fetchBooksList({}));
     }

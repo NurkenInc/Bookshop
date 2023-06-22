@@ -7,7 +7,7 @@ export const bookDetailsApi = rtkApi.injectEndpoints({
   endpoints: (build) => ({
     getBookDetails: build.query<Book | null, string>({
       query: (id) => ({
-        url: `/volumes?q=ibsn:${id}${apiKey}`,
+        url: `/volumes?q=isbn:${id}&${apiKey}`,
       }),
       transformResponse: (responseData: BooksItems) => {
         return responseData?.items ? responseData?.items[0] : null;

@@ -1,6 +1,6 @@
 import { memo, ReactNode } from 'react';
 import { Link, LinkProps } from 'react-router-dom';
-import { classNames } from '@/shared/lib/classNames/classNames';
+import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './AppLink.module.scss';
 
 export enum AppLinkTheme {
@@ -24,6 +24,7 @@ interface AppLinkProps extends LinkProps {
   theme?: AppLinkTheme,
   children?: ReactNode,
   size?: AppLinkSize
+  max?: boolean,
 }
 
 export const AppLink = memo((props: AppLinkProps) => {
@@ -33,12 +34,17 @@ export const AppLink = memo((props: AppLinkProps) => {
     theme = AppLinkTheme.PRIMARY,
     size = AppLinkSize.NONE,
     children,
+    max,
     ...otherProps
   } = props;
 
+  const mods: Mods = {
+    [cls.max]: max,
+  };
+
   return (
     <Link
-      className={classNames(cls.AppLink, {}, [className, cls[size]])}
+      className={classNames(cls.AppLink, mods, [className, cls[size]])}
       to={to}
       {...otherProps}
     >

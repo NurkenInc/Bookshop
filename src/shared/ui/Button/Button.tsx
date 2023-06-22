@@ -20,6 +20,12 @@ export enum ButtonSize {
   XL = 'size_xl',
 }
 
+export enum ButtonAlign {
+  LEFT = 'left',
+  CENTER = 'center',
+  RIGHT = 'right',
+}
+
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   className?: string,
   size?: ButtonSize,
@@ -28,6 +34,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   disabled?: boolean,
   max?: boolean,
   children?: ReactNode,
+  align?: ButtonAlign,
 }
 
 export const Button = memo((props: ButtonProps) => {
@@ -37,6 +44,7 @@ export const Button = memo((props: ButtonProps) => {
     theme = ButtonTheme.BACKGROUND,
     square,
     disabled,
+    align = ButtonAlign.CENTER,
     max,
     children,
     ...otherProps
@@ -46,6 +54,7 @@ export const Button = memo((props: ButtonProps) => {
     className,
     cls[theme],
     cls[size],
+    cls[align],
   ];
 
   const mods: Mods = {

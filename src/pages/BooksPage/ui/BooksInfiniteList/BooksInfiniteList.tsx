@@ -22,7 +22,9 @@ interface BooksInfiniteListProps {
 }
 
 export const BooksInfiniteList = memo((props: BooksInfiniteListProps) => {
-  const { className } = props;
+  const {
+    className,
+  } = props;
   const { t } = useTranslation('book');
   const data = useSelector((state: StateSchema) => getBooks.selectAll(state));
   const totalItems = useSelector(getBooksPageTotalItems);

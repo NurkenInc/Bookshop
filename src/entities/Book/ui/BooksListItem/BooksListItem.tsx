@@ -6,15 +6,13 @@ import { Book } from '../../model/types/book';
 import { BookView } from '../../model/consts/bookConsts';
 import { Card } from '@/shared/ui/Card/Card';
 import { Image } from '@/shared/ui/Image/Image';
-import Thumbnail from '@/shared/assets/images/default-thumbnail.png';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
 import {
   Text, TextAlign, TextSize, TextTheme,
 } from '@/shared/ui/Text/Text';
 import { AppLink } from '@/shared/ui/AppLink/AppLink';
-import LanguageIcon from '@/shared/assets/icons/language.svg';
-import { Icon } from '@/shared/ui/Icon/Icon';
+import { Skeleton } from '@/shared/ui/Skeleton/Skeleton';
 
 interface BooksListItemProps {
   className?: string,
@@ -37,22 +35,26 @@ export const BooksListItem = memo((props: BooksListItemProps) => {
       <Card className={classNames(cls.BooksListItem, {}, [className, cls.detailed])}>
         <HStack max align="center" justify="between" gap="4" className={cls.headerInfo}>
           <HStack gap="4">
-            <Icon Svg={LanguageIcon} height={30} width={30} inverted />
-            <Text title={book?.volumeInfo.language?.toUpperCase()} theme={TextTheme.INVERTED} />
+            <Text text={`${t('Language')}:`} theme={TextTheme.INVERTED} />
+            <Text text={t(book?.volumeInfo.language?.toUpperCase() || 'EN')} theme={TextTheme.INVERTED} />
           </HStack>
           <HStack gap="4">
-            <Icon Svg={LanguageIcon} height={30} width={30} inverted />
-            <Text title={book?.volumeInfo.publishedDate?.toUpperCase()} theme={TextTheme.INVERTED} />
+            <Text text={`${t('Date')}:`} theme={TextTheme.INVERTED} />
+            <Text text={book?.volumeInfo.publishedDate?.toUpperCase()} theme={TextTheme.INVERTED} />
           </HStack>
         </HStack>
         <HStack max align="center" gap="4" className={cls.headerInfo} />
         <HStack max className={cls.content}>
-          <Image
-            src={book?.volumeInfo?.imageLinks?.thumbnail || Thumbnail}
-            className={cls.thumbnail}
-            rounded
-            maxH
-          />
+          {book?.volumeInfo?.imageLinks?.thumbnail ? (
+            <Image
+              src={book?.volumeInfo?.imageLinks?.thumbnail}
+              className={cls.thumbnail}
+              rounded
+              maxH
+            />
+          ) : (
+            <Skeleton height={220} border="5px" width={258} className={cls.thumbnail} />
+          )}
           <VStack max className={cls.info}>
             <Text
               align={TextAlign.CENTER}
@@ -61,13 +63,13 @@ export const BooksListItem = memo((props: BooksListItemProps) => {
               theme={TextTheme.INVERTED}
               size={TextSize.M}
             />
-            <Button theme={ButtonTheme.BACKGROUND_INVERTED}>
-              {book?.volumeInfo?.industryIdentifiers && (
+            {book?.volumeInfo?.industryIdentifiers && (
+              <Button theme={ButtonTheme.BACKGROUND_INVERTED}>
                 <AppLink to={`/books/${book?.volumeInfo?.industryIdentifiers[0]?.identifier}`}>
                   <Text text={t('More Info')} theme={TextTheme.BACKGROUND} />
                 </AppLink>
-              )}
-            </Button>
+              </Button>
+            )}
           </VStack>
         </HStack>
       </Card>
@@ -77,12 +79,16 @@ export const BooksListItem = memo((props: BooksListItemProps) => {
   return (
     <Card className={classNames(cls.BooksListItem, {}, [className])}>
       <HStack className={cls.content}>
-        <Image
-          src={book?.volumeInfo?.imageLinks?.thumbnail || Thumbnail}
-          className={cls.thumbnail}
-          rounded
-          maxH
-        />
+        {book?.volumeInfo?.imageLinks?.thumbnail ? (
+          <Image
+            src={book?.volumeInfo?.imageLinks?.thumbnail}
+            className={cls.thumbnail}
+            rounded
+            maxH
+          />
+        ) : (
+          <Skeleton height={220} border="5px" width={208} className={cls.thumbnail} />
+        )}
         <VStack max className={cls.info}>
           <Text
             align={TextAlign.CENTER}
@@ -91,13 +97,13 @@ export const BooksListItem = memo((props: BooksListItemProps) => {
             theme={TextTheme.INVERTED}
             size={TextSize.M}
           />
-          <Button theme={ButtonTheme.BACKGROUND_INVERTED}>
-            {book?.volumeInfo?.industryIdentifiers && (
+          {book?.volumeInfo?.industryIdentifiers && (
+            <Button theme={ButtonTheme.BACKGROUND_INVERTED}>
               <AppLink to={`/books/${book?.volumeInfo?.industryIdentifiers[0]?.identifier}`} target={target}>
                 <Text text={t('More Info')} theme={TextTheme.BACKGROUND} />
               </AppLink>
-            )}
-          </Button>
+            </Button>
+          )}
         </VStack>
       </HStack>
     </Card>

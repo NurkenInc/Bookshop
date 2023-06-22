@@ -10,5 +10,9 @@
   "partial": "Partial text",
   "newest": "Newest",
   "relevance": "Relevance",
-  "Results count": "Results total count"
+  "Results count": "Results total count",
+  "Date": "Publish date",
+  "Language": "Language",
+  "EN": "English",
+  "RU": "Russian"
 }
