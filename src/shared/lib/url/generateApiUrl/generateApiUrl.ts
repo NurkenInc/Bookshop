@@ -1,4 +1,4 @@
-const apiKey = import.meta.env.VITE_GOOGLE_BOOKS_API_KEY;
+const apiKey = process.env.VITE_GOOGLE_BOOKS_API_KEY;
 
 export interface GenerateApiUrlProps {
   search: string,
@@ -6,7 +6,6 @@ export interface GenerateApiUrlProps {
 }
 
 export function generateApiUrl({ search, params }: GenerateApiUrlProps) {
-  // const query = search.split(' ').join('+')
   let result: string;
   if (search === '') {
     result = '/volumes?q=';

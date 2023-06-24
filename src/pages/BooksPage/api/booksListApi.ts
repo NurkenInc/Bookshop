@@ -7,7 +7,7 @@ interface BooksListApiProps {
   category: string,
 }
 
-const apiKey = import.meta.env.VITE_GOOGLE_BOOKS_API_KEY;
+const apiKey = process.env.VITE_GOOGLE_BOOKS_API_KEY;
 
 export const booksListApi = rtkApi.injectEndpoints({
   endpoints: (build) => ({

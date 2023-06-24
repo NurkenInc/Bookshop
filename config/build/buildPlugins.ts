@@ -6,6 +6,7 @@ import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 import CopyPlugin from 'copy-webpack-plugin';
 import CircularDependencyPlugin from 'circular-dependency-plugin';
 import ForkTsCheckerWebpackPlugin from 'fork-ts-checker-webpack-plugin';
+import Dotenv from 'dotenv-webpack';
 import { BuildOptions } from './types/config';
 
 export function buildPlugins({
@@ -44,6 +45,7 @@ export function buildPlugins({
         mode: 'write-references',
       },
     }),
+    new Dotenv(),
   ];
 
   if (isDev) {

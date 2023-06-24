@@ -5,11 +5,9 @@ interface AuthProviderProps {
   children: ReactNode,
 }
 
-const domain = import.meta.env.VITE_AUTH0_DOMAIN;
-const clientId = import.meta.env.VITE_CLIENT_ID;
+const domain = process.env.VITE_AUTH0_DOMAIN || '';
+const clientId = process.env.VITE_CLIENT_ID || '';
 const appUrl = __APP__;
-
-console.log(appUrl);
 
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   return (

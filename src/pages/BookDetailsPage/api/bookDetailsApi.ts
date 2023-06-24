@@ -1,7 +1,7 @@
 import { rtkApi } from '@/shared/api/rtkApi';
 import { Book, BooksItems } from '@/entities/Book';
 
-const apiKey = import.meta.env.VITE_GOOGLE_BOOKS_API_KEY;
+const apiKey = process.env.VITE_GOOGLE_BOOKS_API_KEY;
 
 export const bookDetailsApi = rtkApi.injectEndpoints({
   endpoints: (build) => ({
