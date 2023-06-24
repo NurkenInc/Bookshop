@@ -7,7 +7,6 @@ interface AuthProviderProps {
 
 const domain = process.env.VITE_AUTH0_DOMAIN || '';
 const clientId = process.env.VITE_CLIENT_ID || '';
-const appUrl = __APP__;
 
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   return (

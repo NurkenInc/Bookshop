@@ -25,12 +25,6 @@ export const Navbar = memo((props: NavbarProps) => {
       <div className={cls.sidebarSwitcher}>
         <SidebarSwitcher />
       </div>
-      {/* <div className={classNames(cls.title)}>
-        <Text
-          title={t('BookStore')}
-          theme={TextTheme.INVERTED}
-        />
-      </div> */}
       <HStack max gap="16" justify="between">
         <HStack className={cls.search}>
           <SearchBooksHints />

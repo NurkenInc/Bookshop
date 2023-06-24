@@ -23,7 +23,7 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
   }
 
   const onLogout = () => {
-    logout();
+    logout({ logoutParams: { returnTo: window.location.origin } });
   };
 
   const trigger = (
