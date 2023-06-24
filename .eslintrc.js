@@ -45,7 +45,7 @@ module.exports = {
     "semi": [2, "always"],
     "no-multi-spaces": [2],
     "indent": ["error", 2, { "SwitchCase": 1 }],
-    "max-len": [2, { code: 130, ignoreComments: true }],
+    "max-len": [2, { code: 180, ignoreComments: true }],
     "react/jsx-indent": [2, 2],
     "react/jsx-indent-props": [2, 2],
     "react/react-in-jsx-scope": "off",

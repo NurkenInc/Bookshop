@@ -35,6 +35,8 @@ export const BooksListItem = memo((props: BooksListItemProps) => {
 
   const bookId = book?.volumeInfo.industryIdentifiers ? `/books/${book?.volumeInfo.industryIdentifiers[0].identifier}` : '/';
 
+  const bookThumbnail = `https://books.google.com/books/content?id=${book?.id}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api`;
+
   return (
     <VStack maxW className={classNames(cls.BooksListItem, {}, [className])}>
       <VStack maxW className={cls.content}>
@@ -42,7 +44,7 @@ export const BooksListItem = memo((props: BooksListItemProps) => {
           <VStack className={cls.thumbnailWrapper}>
             {book?.volumeInfo?.imageLinks?.thumbnail ? (
               <Image
-                src={book?.volumeInfo?.imageLinks?.thumbnail}
+                src={bookThumbnail}
                 className={classNames(cls.thumbnail, { [cls.imgMax]: imgMax }, [])}
                 rounded
               />

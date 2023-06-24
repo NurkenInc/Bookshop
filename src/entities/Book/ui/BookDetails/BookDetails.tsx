@@ -60,6 +60,8 @@ export const BookDetails = memo((props: BookDetailsProps) => {
     </Button>
   );
 
+  const bookThumbnail = `https://books.google.com/books/content?id=${book?.id}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api`;
+
   return (
     <VStack className={cls.BookDetails}>
       <VStack justify="start" maxW className={cls.bookDetailHeader}>
@@ -85,7 +87,7 @@ export const BookDetails = memo((props: BookDetailsProps) => {
         <VStack className={cls.bookInfo}>
           {book?.volumeInfo?.imageLinks?.thumbnail ? (
             <Image
-              src={book?.volumeInfo.imageLinks.thumbnail}
+              src={bookThumbnail}
               alt={book?.volumeInfo.title}
               className={cls.thumbnail}
             />
