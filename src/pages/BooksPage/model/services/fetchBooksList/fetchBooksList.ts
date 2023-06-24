@@ -1,5 +1,5 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
-import { Book, BooksItems } from '@/entities/Book';
+import { BooksItems } from '@/entities/Book';
 import { ThunkConfig } from '@/app/providers/StoreProvider/config/StateSchema';
 import { addQueryParams } from '@/shared/lib/url/addQueryParams/addQueryParams';
 import { getBooksPageLimit } from '../../selectors/getBooksPageLimit/getBooksPageLimit';

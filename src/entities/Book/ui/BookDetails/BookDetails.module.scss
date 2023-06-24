@@ -1,11 +1,104 @@
 .BookDetails {
-  margin: 80px 20px 0;
+  height: 100%;
+}
+
+.bookDetailHeader {
+  height: 70%;
+  background-color: var(--bg-color);
+  color: var(--inverted-bg-color);
 }
 
 .bookInfo {
   margin: 0 20px;
+  padding: 10px 0;
 }
 
 .info {
   white-space: nowrap;
+}
+
+.header {
+  padding: 0 20px;
+}
+
+.moreBtn {
+  padding-top: 5px;
+}
+
+.thumbnail {
+  box-shadow: 12px 10px 0 black;
+  border-radius: var(--rounded-l);
+  height: 200px;
+}
+
+.bookTitle {
+  margin-top: 15px;
+}
+
+.infoBlock {
+  padding: 10px 50px;
+  width: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics {
+  margin: 15px 0;
+  width: max-content;
+  border-radius: var(--rounded-m);
+  background-color: rgb(0 0 0 / 30%);
+}
+
+.border {
+  height: 50px;
+  border-right: 1px solid white;
+  margin-top: 15px;
+}
+
+.footer {
+  background-color: #1d212b;
+  max-height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.description {
+  height: 90%;
+  overflow-y: scroll;
+  direction: rtl;
+  padding-left: 10px;
+}
+
+.descriptionContent {
+  direction: ltr;
+}
+
+.description::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+}
+
+.description::-webkit-scrollbar-track {
+  background-color: #292d36;
+}
+
+.description::-webkit-scrollbar-thumb {
+  background-color: #7f8186;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .bookTitle {
+    font-size: 10px;
+  }
+
+  .author {
+    font-size: 10px;
+  }
+
+  .infoBlock {
+    padding: 0;
+    width: 100px;
+  }
 }

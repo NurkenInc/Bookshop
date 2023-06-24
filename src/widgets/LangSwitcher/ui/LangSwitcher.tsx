@@ -22,10 +22,10 @@ export const LangSwitcher = memo((props: LangSwitcherProps) => {
   return (
     <Button
       className={classNames(cls.LangSwitcher, {}, [className])}
-      theme={ButtonTheme.BACKGROUND_INVERTED}
+      theme={ButtonTheme.CLEAR}
       onClick={onToggle}
     >
-      <Text title={t('Language')} size={TextSize.SM} theme={TextTheme.BACKGROUND} />
+      <Text title={t('Language')} size={TextSize.SM} theme={TextTheme.INVERTED} />
     </Button>
   );
 });

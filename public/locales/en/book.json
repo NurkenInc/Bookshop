@@ -10,9 +10,22 @@
   "partial": "Partial text",
   "newest": "Newest",
   "relevance": "Relevance",
+  "magazines": "Magazines",
+  "books": "Books",
   "Results count": "Results total count",
   "Date": "Publish date",
   "Language": "Language",
   "EN": "English",
-  "RU": "Russian"
+  "RU": "Russian",
+  "Categories": "Categories",
+  "Filter": "Filter",
+  "Category": "Category",
+  "Adventure": "Adventure",
+  "Fantasy": "Fantasy",
+  "Science Fiction": "Science Fiction",
+  "Romance": "Romance",
+  "Type": "Type",
+  "Flash Sale": "Flash Sale",
+  "Sort by": "Sort by",
+  "Print Type": "Print Type"
 }

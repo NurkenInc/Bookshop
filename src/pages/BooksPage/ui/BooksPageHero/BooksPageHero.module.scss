@@ -1,0 +1,51 @@
+.BooksPageHero {
+  display: flex;
+  padding: 10px 80px;
+}
+
+.heroItem {
+  max-height: 400px;
+  width: 100%;
+}
+
+.heroWrapper {
+  border-radius: 15px;
+  position: relative;
+}
+
+.heroThumbnail {
+  border-radius: var(--rounded-l);
+  filter: brightness(55%);
+  max-height: 400px;
+}
+
+.heroText {
+  position: absolute;
+  padding-left: 50px;
+  top: 0;
+}
+
+.bookHero {
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+  .BooksPageHero {
+    flex-direction: column;
+  }
+
+  .quote {
+    font: var(--font-m);
+  }
+
+  .author {
+    font: var(--font-m);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .BooksPageHero {
+    flex-direction: column;
+    padding: 0;
+  }
+}

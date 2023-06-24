@@ -1,7 +1,7 @@
 .BookDetailsPage {
   position: relative;
-  width: 100vw;
-  height: 90vh;
+  width: calc(100vw - var(--sidebar-width));
+  height: 94vh;
   overflow-y: scroll;
   overflow-x: hidden;
 }

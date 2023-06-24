@@ -79,7 +79,7 @@ export const BookSortSelector = memo((props: BookSortSelectorProps) => {
         value={t(sort)}
         defaultValue={t(BooksSortField.NEWEST)}
         direction="bottom right"
-        size={ListBoxSize.L}
+        max
       />
     </HStack>
   );

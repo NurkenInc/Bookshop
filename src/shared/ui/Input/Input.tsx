@@ -1,5 +1,5 @@
 import {
-  memo, useEffect, InputHTMLAttributes, useRef, MutableRefObject, CSSProperties,
+  memo, useEffect, useCallback, InputHTMLAttributes, useRef, MutableRefObject, CSSProperties, ReactNode,
 } from 'react';
 import { classNames, Mods } from '@/shared/lib/classNames/classNames';
 import cls from './Input.module.scss';
@@ -16,6 +16,7 @@ export interface InputProps extends HTMLInputProps {
   onChange?: (value: string) => void,
   width?: string | number,
   height?: string | number,
+  icon?: ReactNode,
 }
 
 export const Input = memo((props: InputProps) => {
@@ -29,6 +30,7 @@ export const Input = memo((props: InputProps) => {
     readonly,
     width,
     height,
+    icon,
     ...otherProps
   } = props;
 
@@ -53,17 +55,26 @@ export const Input = memo((props: InputProps) => {
     height,
   };
 
+  const handleIconClick = useCallback(() => {
+    ref.current.focus();
+  }, []);
+
   return (
-    <input
-      ref={ref}
-      className={classNames(cls.InputWrapper, mods, [className])}
-      onChange={onChangeHandler}
-      placeholder={placeholder}
-      readOnly={readonly}
-      value={value}
-      type={type}
-      style={styles}
-      {...otherProps}
-    />
+    <div className={cls.container}>
+      <div className={cls.icon} onClick={handleIconClick}>
+        {icon}
+      </div>
+      <input
+        ref={ref}
+        className={classNames(cls.InputWrapper, mods, [className])}
+        onChange={onChangeHandler}
+        placeholder={placeholder}
+        readOnly={readonly}
+        value={value}
+        type={type}
+        style={styles}
+        {...otherProps}
+      />
+    </div>
   );
 });

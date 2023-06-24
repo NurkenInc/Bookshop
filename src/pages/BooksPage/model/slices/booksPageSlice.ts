@@ -10,12 +10,6 @@ import { StateSchema } from '@/app/providers/StoreProvider/config/StateSchema';
 
 const booksAdapter = createEntityAdapter<Book>({
   selectId: (book) => book.id,
-  // sortComparer: (a, b) => {
-  //   const ratingA = a.volumeInfo.ratingsCount || 0;
-  //   const ratingB = b.volumeInfo.ratingsCount || 0;
-
-  //   return ratingA - ratingB;
-  // },
 });
 
 export const getBooks = booksAdapter.getSelectors<StateSchema>(

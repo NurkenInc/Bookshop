@@ -1,16 +1,32 @@
+.container {
+  position: relative;
+}
+
 .InputWrapper {
-  border-radius: var(--rounded-m);
+  border-radius: var(--rounded-xl);
+  background-color: var(--light-pink);
   font-weight: 300;
   font-size: 14px;
-  background-color: var(--bg-color);
-  color: var(--inverted-bg-color);
-  border: 1px solid var(--inverted-secondary-color);
-  padding: 0 10px;
+  color: var(--dark-pink);
+  border: none;
+  padding: 0 40px;
   height: 100%;
+
+  &:focus {
+    border: none;
+    outline: 2px solid var(--dark-pink);
+  }
 
   &::placeholder {
     color: var(--dark-gray);
   }
+}
+
+.icon {
+  cursor: text;
+  position: absolute;
+  top: 13px;
+  left: 13px;
 }
 
 .readonly {

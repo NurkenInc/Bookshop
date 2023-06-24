@@ -73,7 +73,7 @@ export const BooksPageFilters = memo((props: BooksPageFiltersProps) => {
           onChangeSort={onSortChange}
         />
       </HStack>
-      <SearchBooksHints onSearchChange={onSearchChange} search={search} />
+      <SearchBooksHints />
     </VStack>
   );
 });

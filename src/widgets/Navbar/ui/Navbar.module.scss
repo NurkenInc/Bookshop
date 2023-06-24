@@ -1,15 +1,28 @@
 .Navbar {
   height: var(--navbar-height);
   background: transparent;
-  border-bottom: 1px solid var(--primary-color);
-  box-shadow: 0 0 15px var(--black-dark);
   transition: 0.3s background ease;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0 20px;
+  width: 100%;
 }
 
 .title {
   width: var(--sidebar-width);
+}
+
+.search {
+  width: 70%;
+}
+
+.sidebarSwitcher {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebarSwitcher {
+    display: block;
+  }
 }

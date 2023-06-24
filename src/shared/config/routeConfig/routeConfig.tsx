@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import { MainPage } from '@/pages/MainPage';
 import { NotFoundPage } from '@/pages/NotFoundPage/ui/NotFoundPage';
 import ProfilePage from '@/pages/ProfilePage/ui/ProfilePage';
 import { BooksPage } from '@/pages/BooksPage';

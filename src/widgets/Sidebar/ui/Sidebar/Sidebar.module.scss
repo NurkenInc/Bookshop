@@ -2,10 +2,11 @@
   flex-shrink: 0;
   width: var(--sidebar-width);
   background: var(--bg-color);
-  border-right: 1px solid var(--primary-color);
-  min-height: calc(100vh - var(--navbar-height));
+  border-right: 2px solid var(--light-gray);
+  height: 100vh;
   position: relative;
   transition: 0.5s width, 0.3s background ease;
+  overflow-y: scroll;
 }
 
 .switchers {
@@ -13,12 +14,15 @@
   bottom: 20px;
 }
 
-.collapsed {
-  width: var(--sidebar-width-collapsed);
+@media screen and (max-width: 800px) {
+  .collapsed {
+    width: var(--sidebar-width-collapsed);
+    border: none;
 
-  .switchers {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.2s linear, opacity 0.2s linear;
+    .switchers {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0.2s linear, opacity 0.2s linear;
+    }
   }
 }

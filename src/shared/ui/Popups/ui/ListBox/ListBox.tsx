@@ -1,15 +1,14 @@
-import { ReactNode, useState, Fragment } from 'react';
+import { Fragment } from 'react';
 import { Listbox as HListbox } from '@headlessui/react';
 import { DropdownDirection } from '@/shared/types/ui';
 import { HStack } from '@/shared/ui/Stack';
-import { Button, ButtonSize, ButtonTheme } from '@/shared/ui/Button/Button';
+import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ListBox.module.scss';
 import popupCls from '../../styles/popup.module.scss';
 import { Icon } from '../../../Icon/Icon';
 import CheckIcon from '../../../../assets/icons/check.svg';
 import { mapDirectionClass } from '../../styles/const';
-import { Filter } from '@/entities/Book';
 
 export interface ListBoxItem<T> {
   value: T,
@@ -51,7 +50,7 @@ export function ListBox <T extends string>(props: ListBoxProps<T>) {
     label,
     max,
     triggerInvisible,
-    size = ListBoxSize.SM,
+    size = ListBoxSize.S,
   } = props;
 
   const optionsClasses = [

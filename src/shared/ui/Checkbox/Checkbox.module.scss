@@ -1,0 +1,15 @@
+.CheckboxWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  color: var(--inverted-bg-color);
+}
+
+.checkbox {
+  accent-color: var(--yellow-dark);
+}
+
+.label {
+  color: var(--gray-light);
+}

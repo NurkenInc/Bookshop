@@ -44,20 +44,29 @@
 
   // Colors
   --overlay-color: rgb(0 0 0 / 60%);
-  --blue-light: #1683f3;
-  --blue-dark: #1e8bc7;
+  --blue-light: #575555;
+  --blue-dark: #1f1e1e;
   --red-light: #e03e57;
   --red-dark: #b11b31;
-  --yellow-light: #feb500;
-  --yellow-dark: #c58e02;
+  --yellow-light: #ded0bb;
+  --yellow-dark: #ac874e;
   --black-light: #202020;
   --black-dark: #000;
-  --light-gray: rgb(226 232 240);
+  --light-gray: rgb(225 229 233);
   --dark-gray: rgb(157 176 199);
+  --light-pink: #f6f4ff;
+  --dark-pink: #c6c2e0;
+  --gray-light: #6e6e84;
 
   // Radius
   --rounded-m: 6px;
   --rounded-l: 15px;
-  --rounded-xl: 20px;
+  --rounded-xl: 25px;
   --rounded-full: 50%;
+
+  // Bagde
+  --badge-color: rgb(0 187 255);
+
+  // Star
+  --star-color: #e2a225;
 }

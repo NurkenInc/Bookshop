@@ -7,16 +7,17 @@
 }
 
 .triggerBtn {
-  padding: 5px 80px;
+  // padding: 5px 80px;
+  width: 100%;
 }
 
 .options {
-  background: var(--listbox-bg);
+  background: var(--bg-color);
   position: absolute;
   z-index: var(--listbox-z-index);
   border-radius: var(--rounded-l);
   box-shadow: 4px 4px 8px var(--listbox-bg);
-  color: var(--bg-color);
+  color: var(--inverted-bg-color);
 }
 
 .item {

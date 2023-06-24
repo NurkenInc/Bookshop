@@ -8,7 +8,6 @@ import { UIReducer } from '@/features/UI';
 import { rtkApi } from '@/shared/api/rtkApi';
 import { StateSchema, ThunkExtraArg } from './StateSchema';
 import { createReducerManager } from './reducerManager';
-import { booksPageReducer } from '@/pages/BooksPage';
 
 export function createReduxStore(
   initialState?: StateSchema,

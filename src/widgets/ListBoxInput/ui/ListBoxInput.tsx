@@ -1,5 +1,5 @@
 import {
-  memo, useState, useCallback, useRef, MutableRefObject, useEffect,
+  memo, useState, useCallback, useRef, MutableRefObject, useEffect, ReactNode,
 } from 'react';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ListBoxInput.module.scss';
@@ -7,13 +7,13 @@ import { Input, InputProps } from '@/shared/ui/Input/Input';
 import { VStack } from '@/shared/ui/Stack';
 import { Text, TextAlign } from '@/shared/ui/Text/Text';
 import { Button, ButtonAlign, ButtonTheme } from '@/shared/ui/Button/Button';
-import { Loader } from '@/shared/ui/Loader/Loader';
 
 interface ListBoxInputProps extends InputProps {
   className?: string,
   items?: string[],
   onChange?: (value: string) => void,
   value?: string,
+  icon?: ReactNode,
 }
 
 export const ListBoxInput = memo((props: ListBoxInputProps) => {
@@ -22,6 +22,7 @@ export const ListBoxInput = memo((props: ListBoxInputProps) => {
     items,
     onChange,
     value,
+    icon,
     ...otherProps
   } = props;
   const hintsRef = useRef() as MutableRefObject<HTMLDivElement>;
@@ -52,9 +53,12 @@ export const ListBoxInput = memo((props: ListBoxInputProps) => {
   return (
     <div className={classNames(cls.ListBoxInput, {}, [className])}>
       <Input
+        id="searchBar"
         onChange={onChange}
         onFocus={onFocus}
         value={value}
+        icon={icon}
+        autoComplete="off"
         {...otherProps}
       />
       {isHintsOpen && (

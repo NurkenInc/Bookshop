@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import { Mods, classNames } from '@/shared/lib/classNames/classNames';
+import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './ThemeSwitcher.module.scss';
 import { Theme, useTheme } from '@/app/providers/ThemeProvider';
 import { Button, ButtonTheme } from '@/shared/ui/Button/Button';
@@ -18,21 +18,23 @@ export const ThemeSwitcher = memo((props: ThemeSwitcherProps) => {
   return (
     <Button
       className={cls.ThemeSwitcher}
-      theme={ButtonTheme.BACKGROUND_INVERTED}
+      theme={ButtonTheme.CLEAR}
       onClick={toggleTheme}
       square
     >
       <Icon
         Svg={MoonIcon}
         className={classNames(cls.dark, { [cls.showDark]: theme === Theme.DARK }, [])}
-        height={20}
-        width={20}
+        height={30}
+        width={30}
+        inverted
       />
       <Icon
         className={classNames(cls.light, { [cls.showLight]: theme === Theme.LIGHT }, [])}
         Svg={SunIcon}
-        height={20}
-        width={20}
+        height={30}
+        width={30}
+        inverted
       />
     </Button>
   );

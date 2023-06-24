@@ -6,7 +6,6 @@ import cls from './Dropdown.module.scss';
 import { DropdownDirection, Size } from '../../../../types/ui';
 import popupCls from '../../styles/popup.module.scss';
 import { mapDirectionClass, mapSizeClass } from '../../styles/const';
-import { Text, TextAlign } from '@/shared/ui/Text/Text';
 
 export interface DropdownItem {
   disabled?: boolean,

@@ -1,5 +1,5 @@
 export interface SidebarItemType {
-  path: string,
+  path?: string,
   Icon: React.VFC<React.SVGProps<SVGSVGElement>>,
   text: string,
 }

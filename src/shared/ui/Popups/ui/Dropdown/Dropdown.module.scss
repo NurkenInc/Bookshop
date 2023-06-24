@@ -14,7 +14,7 @@
   border: none;
   border-radius: var(--rounded-m);
   padding: 4px 14px;
-  background-color: none;
+  background-color: var(--bg-color);
   outline: none;
   color: var(--black-dark);
   cursor: pointer;
@@ -29,7 +29,7 @@
   transform: scale(0.95);
 }
 
-.enterTo { 
+.enterTo {
   transform: scale(1);
   opacity: 1;
 }

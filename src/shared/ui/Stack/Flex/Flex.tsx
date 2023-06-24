@@ -58,6 +58,7 @@ export const Flex = (props: FlexProps) => {
     max,
     maxH,
     maxW,
+    ...otherProps
   } = props;
 
   const mods: Mods = {
@@ -75,7 +76,7 @@ export const Flex = (props: FlexProps) => {
   ];
 
   return (
-    <div className={classNames(cls.Flex, mods, classes)}>
+    <div className={classNames(cls.Flex, mods, classes)} {...otherProps}>
       {children}
     </div>
   );

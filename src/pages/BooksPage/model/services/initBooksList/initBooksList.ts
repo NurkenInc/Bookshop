@@ -6,8 +6,6 @@ import { SortOrder } from '@/shared/types';
 import { booksPageActions } from '../../slices/booksPageSlice';
 import { fetchBooksList } from '../fetchBooksList/fetchBooksList';
 
-const apiKey = import.meta.env.VITE_GOOGLE_BOOKS_API_KEY;
-
 export const initBooksList = createAsyncThunk<void, URLSearchParams, ThunkConfig<string>>(
   'books/initBooksList',
   async (searchParams, thunkApi) => {
@@ -17,37 +15,38 @@ export const initBooksList = createAsyncThunk<void, URLSearchParams, ThunkConfig
     } = thunkApi;
 
     const inited = getBooksPageInited(getState());
+    const state = getState();
 
     if (!inited) {
-      const sortFromUrl = searchParams.get('orderBy') as BooksSortField;
-      const categoryFromUrl = searchParams.get('subject') as string;
-      const searchFromUrl = searchParams.get('q');
+      const sortFromUrl = searchParams.get('sort') as BooksSortField;
+      const categoryFromUrl = searchParams.get('category') as string;
+      const searchFromUrl = searchParams.get('search');
       const printTypeFromUrl = searchParams.get('printType') as PrintType;
       const orderFromUrl = searchParams.get('order') as SortOrder;
       const filterFromUrl = searchParams.get('filter') as Filter;
 
       if (sortFromUrl) {
-        booksPageActions.setSort(sortFromUrl);
+        dispatch(booksPageActions.setSort(sortFromUrl));
       }
 
       if (categoryFromUrl) {
-        booksPageActions.setCategory(categoryFromUrl);
+        dispatch(booksPageActions.setCategory(categoryFromUrl));
       }
 
       if (searchFromUrl) {
-        booksPageActions.setSearch(searchFromUrl);
+        dispatch(booksPageActions.setSearch(searchFromUrl));
       }
 
       if (printTypeFromUrl) {
-        booksPageActions.setPrintType(printTypeFromUrl);
+        dispatch(booksPageActions.setPrintType(printTypeFromUrl));
       }
 
       if (orderFromUrl) {
-        booksPageActions.setOrder(orderFromUrl);
+        dispatch(booksPageActions.setOrder(orderFromUrl));
       }
 
       if (filterFromUrl) {
-        booksPageActions.setFilter(filterFromUrl);
+        dispatch(booksPageActions.setFilter(filterFromUrl));
       }
 
       dispatch(booksPageActions.initState());

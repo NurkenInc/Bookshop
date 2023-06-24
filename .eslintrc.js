@@ -36,13 +36,14 @@ module.exports = {
     '@typescript-eslint',
     'i18next',
     'react-hooks',
-    'project-fsd-arch'
+    'project-fsd-arch',
+    'unused-imports'
   ],
   ignorePatterns: ['.eslintrc.js', 'reports', 'index.html'],
   rules: {
-    'quotes': [2, 'single'],
-    'semi': [2, 'always'],
-    'no-multi-spaces': [2],
+    "quotes": [2, "single"],
+    "semi": [2, "always"],
+    "no-multi-spaces": [2],
     "indent": ["error", 2, { "SwitchCase": 1 }],
     "max-len": [2, { code: 130, ignoreComments: true }],
     "react/jsx-indent": [2, 2],
@@ -70,6 +71,7 @@ module.exports = {
     "arrow-body-style": "off",
     "project-fsd-arch/path-checker": "error",
     "import/extensions": "off", // fix
+    "unused-imports/no-unused-imports": "error",
   },
   overrides: [
     {

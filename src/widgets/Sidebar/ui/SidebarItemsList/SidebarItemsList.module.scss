@@ -1,0 +1,36 @@
+.header {
+  padding: 20px 0 10px 20px;
+}
+
+.filter {
+  border-bottom: 1px solid var(--light-gray);
+  padding: 0 0 20px 20px;
+}
+
+.filters {
+  padding: 10px 40px;
+  max-height: 100vh;
+  transition: max-height 0.25s ease-in, padding 0.35s ease-out;
+  overflow: hidden;
+}
+
+.filterHeader {
+  cursor: pointer;
+}
+
+.collapsed {
+  padding: 0 40px;
+  max-height: 0;
+  transition: max-height 0.15s ease-out, padding 0.55s ease-out;
+  overflow: hidden;
+}
+
+.arrow {
+  transform: rotate(0);
+  transition: transform 0.25s ease-out;
+}
+
+.arrowCollapsed {
+  transform: rotate(-90deg);
+  transition: transform 0.25s ease-out;
+}
