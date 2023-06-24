@@ -25,7 +25,7 @@ interface BooksPageHeroProps {
 
 export const BooksPageHero = memo((props: BooksPageHeroProps) => {
   const { className } = props;
-  const { t } = useTranslation();
+  const { t } = useTranslation('book');
   const data = useSelector((state: StateSchema) => getBooks.selectAll(state));
   const error = useSelector(getBooksPageError);
   const isLoading = useSelector(getBooksPageIsLoading);
