@@ -45,7 +45,9 @@ export function buildPlugins({
         mode: 'write-references',
       },
     }),
-    new Dotenv(),
+    new Dotenv({
+      systemvars: true,
+    }),
   ];
 
   if (isDev) {
