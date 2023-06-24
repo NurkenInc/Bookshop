@@ -47,7 +47,7 @@
   margin: 15px 0;
   width: max-content;
   border-radius: var(--rounded-m);
-  background-color: rgb(0 0 0 / 30%);
+  background-color: var(--statistics-bg);
 }
 
 .border {
@@ -57,7 +57,7 @@
 }
 
 .footer {
-  background-color: #1d212b;
+  background-color: var(--inverted-bg-color);
   max-height: 100%;
   width: 100%;
   padding: 20px;

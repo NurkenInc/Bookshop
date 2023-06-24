@@ -1,5 +1,5 @@
 .theme_dark {
-  --bg-color: #393939;
+  --bg-color: #1b1e2c;
   --inverted-bg-color: #f0f0f0;
   --primary-color: #3a4767;
   --secondary-color: #1b1e2c;
@@ -22,4 +22,10 @@
 
   // listbox
   --listbox-bg: rgb(255 255 255);
+
+  // checkbox
+  --checkbox-bg: #ded0bb;
+
+  // book statistic
+  --statistics-bg: rgb(255 255 255 / 30%);
 }

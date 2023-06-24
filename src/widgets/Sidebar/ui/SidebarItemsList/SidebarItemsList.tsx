@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import cls from './SidebarItemsList.module.scss';
-import { Text, TextAlign, TextSize } from '@/shared/ui/Text/Text';
+import { Text, TextAlign, TextSize, TextTheme } from '@/shared/ui/Text/Text';
 import { HStack, VStack } from '@/shared/ui/Stack';
 import { Icon } from '@/shared/ui/Icon/Icon';
 import FilterIcon from '@/shared/assets/icons/filter.svg';
@@ -149,41 +149,41 @@ export const SidebarItemsList = memo((props: SidebarItemsListProps) => {
   return (
     <div className={classNames(cls.SidebarItemsList, {}, [className])}>
       <HStack className={cls.header}>
-        <Text title="BookStore " size={TextSize.SM} />
+        <Text title="BookStore " size={TextSize.SM} theme={TextTheme.GRAY} />
         <pre>{' > '}</pre>
-        <Text title={t('Categories')} size={TextSize.SM} />
+        <Text title={t('Categories')} size={TextSize.SM} theme={TextTheme.GRAY} />
       </HStack>
       <VStack className={classNames(cls.filter, {}, [])}>
         <HStack max gap="8" align="center" onClick={onFilterClick} className={cls.filterHeader}>
-          <Icon Svg={FilterIcon} height={20} width={20} />
-          <Text title={t('Filter')} align={TextAlign.LEFT} size={TextSize.M} />
+          <Icon Svg={FilterIcon} height={20} width={20} className={cls.icon} />
+          <Text title={t('Filter')} align={TextAlign.LEFT} size={TextSize.M} theme={TextTheme.GRAY} />
           <Icon
-            className={classNames(cls.arrow, { [cls.arrowCollapsed]: filterCollapsed }, [])}
+            className={classNames(cls.arrow, { [cls.arrowCollapsed]: filterCollapsed }, [cls.icon])}
             Svg={ArrowDown}
             height={10}
             width={10}
           />
         </HStack>
         <VStack max align="start" gap="8" className={classNames(cls.filters, { [cls.collapsed]: filterCollapsed }, [])}>
-          <Text title={t('Category')} align={TextAlign.LEFT} size={TextSize.SM} />
+          <Text title={t('Category')} align={TextAlign.LEFT} size={TextSize.SM} theme={TextTheme.GRAY} />
           <CheckboxGroup
             items={categoryItems}
             onChange={onCategoryChange}
             defaultValue={category}
           />
-          <Text title={t('Type')} align={TextAlign.LEFT} size={TextSize.SM} />
+          <Text title={t('Type')} align={TextAlign.LEFT} size={TextSize.SM} theme={TextTheme.GRAY} />
           <CheckboxGroup
             items={typeItems}
             onChange={onFilterChange}
             defaultValue={filter}
           />
-          <Text title={t('Sort by')} align={TextAlign.LEFT} size={TextSize.SM} />
+          <Text title={t('Sort by')} align={TextAlign.LEFT} size={TextSize.SM} theme={TextTheme.GRAY} />
           <CheckboxGroup
             items={sortByItems}
             onChange={onSortChange}
             defaultValue={sort}
           />
-          <Text title={t('Print type')} align={TextAlign.LEFT} size={TextSize.SM} />
+          <Text title={t('Print type')} align={TextAlign.LEFT} size={TextSize.SM} theme={TextTheme.GRAY} />
           <CheckboxGroup
             items={printTypeItems}
             onChange={onPrintTypeChange}

@@ -18,11 +18,6 @@ const BookDetailsPage = memo((props: BookDetailsPageProps) => {
 
   return (
     <div className={classNames(cls.BookDetailsPage, {}, [className])}>
-      {/* <Button className={cls.returnBtn} theme={ButtonTheme.BACKGROUND_INVERTED} square>
-        <AppLink to="/" size={AppLinkSize.S}>
-          <Icon Svg={ArrowLeft} width={20} height={20} />
-        </AppLink>
-      </Button> */}
       <BookDetails
         book={book}
         isLoading={isLoading}

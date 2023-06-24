@@ -34,3 +34,8 @@
   transform: rotate(-90deg);
   transition: transform 0.25s ease-out;
 }
+
+.icon {
+  fill: var(--gray-light);
+  stroke: var(--gray-light);
+}

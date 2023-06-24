@@ -1,6 +1,6 @@
 :root {
   --bg-color: #fff;
-  --inverted-bg-color: #393939;
+  --inverted-bg-color: #1b1e2c;
   --primary-color: #1b1e2c;
   --secondary-color: #3a4767;
   --inverted-primary-color: #3a4767;
@@ -19,4 +19,10 @@
 
   // listbox
   --listbox-bg: rgb(15 23 42);
+
+  // checkbox
+  --checkbox-bg: #ac874e;
+
+  // book statistic
+  --statistics-bg: rgb(0 0 0 / 30%);
 }

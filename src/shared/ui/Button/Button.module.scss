@@ -5,7 +5,7 @@
   align-items: center;
   padding: 5px 10px;
   background: var(--bg-color);
-  color: var(--primary-color);
+  color: var(--inverted-bg-color);
   border: 0 solid transparent;
   border-radius: var(--rounded-m);
 
@@ -18,7 +18,7 @@
 
 .background {
   background: var(--bg-color);
-  color: var(--primary-color);
+  color: var(--inverted-bg-color);
   border: none;
 }
 

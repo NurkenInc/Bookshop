@@ -76,7 +76,7 @@ export const BookDetails = memo((props: BookDetailsProps) => {
             size="L"
             items={[
               {
-                content: <Text text={t('Copy Link')} className={cls.text} />,
+                content: <Text text={t('Copy Link')} className={cls.text} theme={TextTheme.INVERTED} />,
                 onClick: onCopy,
               },
             ]}
@@ -129,7 +129,7 @@ export const BookDetails = memo((props: BookDetailsProps) => {
         </VStack>
         <Button max theme={ButtonTheme.BACKGROUND} square>
           <AppLink max to={book?.accessInfo?.webReaderLink || '/'} target="_blank" size={AppLinkSize.S}>
-            {t('Start Reading')}
+            <Text align={TextAlign.CENTER} text={t('Start Reading')} theme={TextTheme.INVERTED} />
           </AppLink>
         </Button>
       </VStack>

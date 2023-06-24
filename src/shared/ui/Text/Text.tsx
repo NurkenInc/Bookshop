@@ -16,6 +16,7 @@ export enum TextTheme {
   BACKGROUND = 'font_background',
   ERROR = 'font_error',
   WARNING = 'font_warning',
+  GRAY = 'font_gray',
 }
 
 export enum TextAlign {
