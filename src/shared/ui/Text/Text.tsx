@@ -12,6 +12,7 @@ export enum TextSize {
 
 export enum TextTheme {
   PRIMARY = 'font_primary',
+  INVERTED_PRIMARY = 'font_primary_inverted',
   INVERTED = 'font_inverted',
   BACKGROUND = 'font_background',
   ERROR = 'font_error',

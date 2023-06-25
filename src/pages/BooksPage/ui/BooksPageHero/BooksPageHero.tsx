@@ -57,14 +57,14 @@ export const BooksPageHero = memo((props: BooksPageHeroProps) => {
         />
         <VStack maxH maxW gap="8" justify="center" align="start" className={cls.heroText}>
           <Text
-            theme={TextTheme.BACKGROUND}
+            theme={TextTheme.INVERTED_PRIMARY}
             align={TextAlign.LEFT}
             size={TextSize.L}
             className={cls.quote}
             title={t('A book is a gift you can')}
           />
           <Text
-            theme={TextTheme.BACKGROUND}
+            theme={TextTheme.INVERTED_PRIMARY}
             align={TextAlign.LEFT}
             size={TextSize.L}
             className={cls.quote}

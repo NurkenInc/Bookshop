@@ -55,12 +55,12 @@ export const BooksListItem = memo((props: BooksListItemProps) => {
               book?.volumeInfo.averageRating && (
                 <HStack className={cls.rating} gap="8">
                   <Icon Svg={Star} width={12} height={12} className={cls.star} />
-                  <Text text={book.volumeInfo.averageRating} theme={TextTheme.BACKGROUND} />
+                  <Text theme={TextTheme.INVERTED_PRIMARY} text={book.volumeInfo.averageRating} />
                 </HStack>
               )
             }
             <HStack className={cls.saleInfo} gap="8">
-              <Text text={t('Flash Sale')} theme={TextTheme.BACKGROUND} />
+              <Text text={t('Flash Sale')} theme={TextTheme.INVERTED_PRIMARY} />
             </HStack>
           </VStack>
         </AppLink>

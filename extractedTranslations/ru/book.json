@@ -1,4 +1,5 @@
 {
+  "A book is a gift you can": "A book is a gift you can",
   "Adventure": "Adventure",
   "All": "All",
   "Book name, text, author": "Book name, text, author",
@@ -9,7 +10,10 @@
   "Fantasy": "Fantasy",
   "Filter": "Filter",
   "Flash Sale": "Flash Sale",
+  "Free Books": "Free Books",
+  "Garrison Keillor": "Garrison Keillor",
   "Magazines": "Magazines",
+  "Newest Books": "Newest Books",
   "Print type": "Print type",
   "Results count": "Results count",
   "Romance": "Romance",
@@ -20,6 +24,7 @@
   "free-ebooks": "free-ebooks",
   "full": "full",
   "newest": "newest",
+  "open again and again": "open again and again",
   "paid-ebooks": "paid-ebooks",
   "partial": "partial",
   "relevance": "relevance"
