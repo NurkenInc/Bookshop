@@ -30,6 +30,7 @@ export function buildPlugins({
     new CopyPlugin({
       patterns: [
         { from: paths.locales, to: paths.buildLocales },
+        { from: paths.logo, to: paths.buildLogo },
       ],
     }),
     new CircularDependencyPlugin({
